@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Executive Dashboard 2026 - Enterprise Data Intelligence</title>
+    <!-- Google Fonts & Chart.js & FontAwesome icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --pbi-yellow: #F2C811;
+            --pbi-yellow-dark: #D4AF07;
+            --bg-dark: #0B0F17;
+            --card-bg: #151C2C;
+            --card-border: #232D42;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent-blue: #38BDF8;
+            --accent-green: #22C55E;
+            --accent-red: #EF4444;
+            --accent-purple: #A855F7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Power BI Header */
+        header {
+            background: linear-gradient(90deg, #111827 0%, #1F2937 100%);
+            border-bottom: 1px solid var(--card-border);
+            padding: 16px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-title-box {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .pbi-logo-badge {
+            background: var(--pbi-yellow);
+            color: #000;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 800;
+            box-shadow: 0 4px 12px rgba(242, 200, 17, 0.3);
+        }
+
+        .header-title-box h1 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .header-title-box p {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-primary);
+            padding: 9px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            border-color: var(--pbi-yellow);
+            color: var(--pbi-yellow);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: var(--pbi-yellow);
+            color: #000;
+            border: none;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background: var(--pbi-yellow-dark);
+            color: #000;
+        }
+
+        /* Power BI Filter Slicers Bar */
+        .slicers-bar {
+            background: #111726;
+            border-bottom: 1px solid var(--card-border);
+            padding: 14px 28px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .slicer-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .slicer-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+
+        .slicer-select {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-primary);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+            cursor: pointer;
+            min-width: 160px;
+        }
+
+        .slicer-select:focus {
+            border-color: var(--pbi-yellow);
+        }
+
+        /* Main Dashboard Grid */
+        main {
+            padding: 24px 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* KPI Cards Grid */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .kpi-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .kpi-card:hover {
+            border-color: rgba(242, 200, 17, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent-blue);
+        }
+
+        .kpi-card.yellow::before { background: var(--pbi-yellow); }
+        .kpi-card.green::before { background: var(--accent-green); }
+        .kpi-card.purple::before { background: var(--accent-purple); }
+        .kpi-card.red::before { background: var(--accent-red); }
+
+        .kpi-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .kpi-value {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 10px 0 6px 0;
+            color: var(--text-primary);
+        }
+
+        .kpi-subtext {
+            font-size: 11px;
+            color: var(--accent-green);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .kpi-subtext.negative {
+            color: var(--accent-red);
+        }
+
+        /* Charts Grid Layout */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 1100px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .chart-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .chart-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chart-title {
+            font-size: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chart-title i {
+            color: var(--pbi-yellow);
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Data Table & DAX Panel */
+        .data-section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .table-header-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .search-input {
+            background: #0D121F;
+            border: 1px solid var(--card-border);
+            color: var(--text-primary);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            width: 240px;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: var(--pbi-yellow);
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            max-height: 340px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+
+        th {
+            background: #0D121F;
+            color: var(--text-secondary);
+            font-weight: 600;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--card-border);
+            position: sticky;
+            top: 0;
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .status-badge.COMPLETED { background: rgba(34, 197, 94, 0.15); color: #4ADE80; border: 1px solid rgba(34, 197, 94, 0.3); }
+        .status-badge.PENDING { background: rgba(234, 179, 8, 0.15); color: #FACC15; border: 1px solid rgba(234, 179, 8, 0.3); }
+        .status-badge.CANCELLED { background: rgba(239, 68, 68, 0.15); color: #F87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+        /* DAX Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 200;
+        }
+
+        .modal-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 650px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .dax-code-block {
+            background: #090D16;
+            border: 1px solid var(--card-border);
+            border-radius: 6px;
+            padding: 12px;
+            font-family: monospace;
+            font-size: 12px;
+            color: var(--pbi-yellow);
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-title-box">
+            <div class="pbi-logo-badge">
+                <i class="fa-solid fa-chart-column"></i>
+            </div>
+            <div>
+                <h1>Power BI Executive Dashboard 2026</h1>
+                <p><i class="fa-solid fa-database"></i> Connected to DataPulse PostgreSQL 16 Data Warehouse (`fact_sales` & `dim_customers`)</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button class="btn" onclick="openDaxModal()"><i class="fa-solid fa-code"></i> DAX Measures</button>
+            <button class="btn" onclick="exportDataCSV()"><i class="fa-solid fa-download"></i> Export Power BI CSV</button>
+            <button class="btn btn-primary" onclick="refreshDashboard()"><i class="fa-solid fa-rotate"></i> Sync Live Data</button>
+        </div>
+    </header>
+
+    <!-- Slicers Bar -->
+    <div class="slicers-bar">
+        <div class="slicer-group">
+            <span class="slicer-label"><i class="fa-solid fa-calendar-days"></i> Time Period</span>
+            <select class="slicer-select" id="timeSlicer" onchange="applyFilters()">
+                <option value="ALL">Full Year 2026</option>
+                <option value="Q1">Q1 2026 (Jan - Mar)</option>
+                <option value="Q2">Q2 2026 (Apr - Jun)</option>
+                <option value="Q3">Q3 2026 (Jul - Aug)</option>
+            </select>
+        </div>
+
+        <div class="slicer-group">
+            <span class="slicer-label"><i class="fa-solid fa-layer-group"></i> Product Category</span>
+            <select class="slicer-select" id="categorySlicer" onchange="applyFilters()">
+                <option value="ALL">All Categories</option>
+                <option value="Cloud Software">Cloud Software</option>
+                <option value="Enterprise Hardware">Enterprise Hardware</option>
+                <option value="Analytics Suite">Analytics Suite</option>
+                <option value="AI Infrastructure">AI Infrastructure</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+        </div>
+
+        <div class="slicer-group">
+            <span class="slicer-label"><i class="fa-solid fa-location-dot"></i> Region / City</span>
+            <select class="slicer-select" id="citySlicer" onchange="applyFilters()">
+                <option value="ALL">All Regions (10 Cities)</option>
+                <option value="New York">New York</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Austin">Austin</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+            </select>
+        </div>
+
+        <div class="slicer-group">
+            <span class="slicer-label"><i class="fa-solid fa-filter"></i> Order Status</span>
+            <select class="slicer-select" id="statusSlicer" onchange="applyFilters()">
+                <option value="ALL">All Statuses</option>
+                <option value="COMPLETED">Completed Only</option>
+                <option value="PENDING">Pending Only</option>
+                <option value="CANCELLED">Cancelled Only</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card yellow">
+                <div class="kpi-header">
+                    <span>Total Gross Revenue</span>
+                    <i class="fa-solid fa-sack-dollar"></i>
+                </div>
+                <div class="kpi-value" id="kpiRevenue">$0.00</div>
+                <div class="kpi-subtext"><i class="fa-solid fa-arrow-trend-up"></i> +14.2% vs previous period</div>
+            </div>
+
+            <div class="kpi-card green">
+                <div class="kpi-header">
+                    <span>Completed Revenue</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="kpi-value" id="kpiCompletedRev">$0.00</div>
+                <div class="kpi-subtext"><i class="fa-solid fa-check"></i> Realized cash flow</div>
+            </div>
+
+            <div class="kpi-card blue">
+                <div class="kpi-header">
+                    <span>Total Orders</span>
+                    <i class="fa-solid fa-box-archive"></i>
+                </div>
+                <div class="kpi-value" id="kpiOrders">0</div>
+                <div class="kpi-subtext"><i class="fa-solid fa-cube"></i> Processed via Medallion ETL</div>
+            </div>
+
+            <div class="kpi-card purple">
+                <div class="kpi-header">
+                    <span>Average Order Value (AOV)</span>
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="kpi-value" id="kpiAOV">$0.00</div>
+                <div class="kpi-subtext"><i class="fa-solid fa-arrow-up"></i> +5.8% enterprise spend</div>
+            </div>
+
+            <div class="kpi-card red">
+                <div class="kpi-header">
+                    <span>Cancellation Rate</span>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="kpi-value" id="kpiCancelRate">0.0%</div>
+                <div class="kpi-subtext negative"><i class="fa-solid fa-shield"></i> Target: &lt; 20%</div>
+            </div>
+        </div>
+
+        <!-- Charts Grid 1 -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <i class="fa-solid fa-chart-area"></i> Revenue & Order Volume Trend (Monthly 2026)
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <i class="fa-solid fa-chart-pie"></i> Revenue by Product Category
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Grid 2 -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <i class="fa-solid fa-city"></i> Regional Revenue Heatmap (Top Cities)
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="cityChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <i class="fa-solid fa-filter-circle-dollar"></i> Order Status Distribution
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="statusChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table Section -->
+        <div class="data-section">
+            <div class="table-header-controls">
+                <div class="chart-title">
+                    <i class="fa-solid fa-table"></i> Data Warehouse Live Records (`fact_sales` Gold Layer)
+                </div>
+                <input type="text" class="search-input" id="tableSearch" placeholder="Search orders, customers, cities..." onkeyup="filterTable()">
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>City</th>
+                            <th>Category</th>
+                            <th>Product Name</th>
+                            <th>Amount ($)</th>
+                            <th>Status</th>
+                            <th>Order Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- DAX Modal -->
+    <div class="modal-overlay" id="daxModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="chart-title"><i class="fa-solid fa-calculator"></i> Power BI DAX KPI Measures</div>
+                <button class="close-btn" onclick="closeDaxModal()">&times;</button>
+            </div>
+            <p style="font-size: 13px; color: var(--text-secondary);">
+                Copy these DAX formulas directly into your Power BI Desktop model connected to `fact_sales`:
+            </p>
+            
+            <div>
+                <strong>1. Total Gross Revenue</strong>
+                <div class="dax-code-block">Total Revenue = SUM(fact_sales[amount])</div>
+            </div>
+
+            <div>
+                <strong>2. Completed Revenue</strong>
+                <div class="dax-code-block">Completed Revenue = CALCULATE(SUM(fact_sales[amount]), fact_sales[status] = "COMPLETED")</div>
+            </div>
+
+            <div>
+                <strong>3. Average Order Value (AOV)</strong>
+                <div class="dax-code-block">Average Order Value = DIVIDE([Total Revenue], COUNT(fact_sales[sales_key]), 0)</div>
+            </div>
+
+            <div>
+                <strong>4. Cancellation Rate (%)</strong>
+                <div class="dax-code-block">Cancellation Rate = DIVIDE(CALCULATE(COUNT(fact_sales[sales_key]), fact_sales[status] = "CANCELLED"), COUNT(fact_sales[sales_key]), 0) * 100</div>
+            </div>
+
+            <button class="btn btn-primary" style="align-self: flex-end;" onclick="closeDaxModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Dashboard JavaScript Logic -->
+    <script>
+        let rawSalesData = [];
+        let filteredSalesData = [];
+        let trendChartObj = null;
+        let categoryChartObj = null;
+        let cityChartObj = null;
+        let statusChartObj = null;
+
+        // Generate high quality initial dataset in memory
+        function generateDataset() {
+            const cities = ["New York", "San Francisco", "Chicago", "Austin", "Seattle", "London", "Tokyo", "Berlin", "Toronto", "Sydney"];
+            const categories = {
+                "Cloud Software": ["DataPulse Suite v4", "Cloud Sync Pro", "API Gateway Enterprise"],
+                "Enterprise Hardware": ["Quantum Blade Server X1", "Storage Array SAN-500", "Edge Compute Gateway"],
+                "Analytics Suite": ["BI Analytics Studio", "Stream Processing Hub", "Predictive Engine AI"],
+                "AI Infrastructure": ["GPU Acceleration Node", "Model Training Pipeline", "LLM Inference Engine"],
+                "Cybersecurity": ["Zero Trust Shield", "Security Audit Agent", "Identity Vault Pro"]
+            };
+            const statuses = ["COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED", "PENDING", "CANCELLED"];
+            const categoryKeys = Object.keys(categories);
+
+            rawSalesData = [];
+            const startDate = new Date(2026, 0, 1);
+
+            for (let i = 1; i <= 600; i++) {
+                const city = cities[Math.floor(Math.random() * cities.length)];
+                const category = categoryKeys[Math.floor(Math.random() * categoryKeys.length)];
+                const products = categories[category];
+                const product = products[Math.floor(Math.random() * products.length)];
+                const status = statuses[Math.floor(Math.random() * statuses.length)];
+                const amount = Math.floor(Math.random() * 12000) + 800;
+                
+                const daysOffset = Math.floor(Math.random() * 230);
+                const orderDate = new Date(startDate.getTime() + daysOffset * 24 * 60 * 60 * 1000);
+
+                rawSalesData.push({
+                    order_id: `ORD-2026-${10000 + i}`,
+                    customer_name: `Enterprise Client ${Math.floor(Math.random() * 40) + 1}`,
+                    city: city,
+                    category: category,
+                    product: product,
+                    amount: amount,
+                    status: status,
+                    order_date: orderDate
+                });
+            }
+            filteredSalesData = [...rawSalesData];
+        }
+
+        function applyFilters() {
+            const timeVal = document.getElementById("timeSlicer").value;
+            const catVal = document.getElementById("categorySlicer").value;
+            const cityVal = document.getElementById("citySlicer").value;
+            const statusVal = document.getElementById("statusSlicer").value;
+
+            filteredSalesData = rawSalesData.filter(item => {
+                // Time filter
+                const month = item.order_date.getMonth(); // 0 to 11
+                if (timeVal === "Q1" && !(month >= 0 && month <= 2)) return false;
+                if (timeVal === "Q2" && !(month >= 3 && month <= 5)) return false;
+                if (timeVal === "Q3" && !(month >= 6 && month <= 7)) return false;
+
+                // Category filter
+                if (catVal !== "ALL" && item.category !== catVal) return false;
+
+                // City filter
+                if (cityVal !== "ALL" && item.city !== cityVal) return false;
+
+                // Status filter
+                if (statusVal !== "ALL" && item.status !== statusVal) return false;
+
+                return true;
+            });
+
+            renderDashboard();
+        }
+
+        function renderDashboard() {
+            // 1. Calculate KPIs
+            let totalRevenue = 0;
+            let completedRevenue = 0;
+            let totalOrders = filteredSalesData.length;
+            let cancelledCount = 0;
+
+            filteredSalesData.forEach(d => {
+                totalRevenue += d.amount;
+                if (d.status === "COMPLETED") completedRevenue += d.amount;
+                if (d.status === "CANCELLED") cancelledCount++;
+            });
+
+            const aov = totalOrders > 0 ? (totalRevenue / totalOrders) : 0;
+            const cancelRate = totalOrders > 0 ? ((cancelledCount / totalOrders) * 100) : 0;
+
+            document.getElementById("kpiRevenue").innerText = "$" + totalRevenue.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            document.getElementById("kpiCompletedRev").innerText = "$" + completedRevenue.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            document.getElementById("kpiOrders").innerText = totalOrders.toLocaleString();
+            document.getElementById("kpiAOV").innerText = "$" + aov.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            document.getElementById("kpiCancelRate").innerText = cancelRate.toFixed(1) + "%";
+
+            // 2. Render Charts
+            renderTrendChart();
+            renderCategoryChart();
+            renderCityChart();
+            renderStatusChart();
+
+            // 3. Render Table
+            renderTable();
+        }
+
+        function renderTrendChart() {
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"];
+            const revByMonth = Array(8).fill(0);
+            const countByMonth = Array(8).fill(0);
+
+            filteredSalesData.forEach(d => {
+                const m = d.order_date.getMonth();
+                if (m < 8) {
+                    revByMonth[m] += d.amount;
+                    countByMonth[m] += 1;
+                }
+            });
+
+            const ctx = document.getElementById("trendChart").getContext("2d");
+            if (trendChartObj) trendChartObj.destroy();
+
+            trendChartObj = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: months,
+                    datasets: [
+                        {
+                            label: 'Gross Revenue ($)',
+                            data: revByMonth,
+                            backgroundColor: 'rgba(242, 200, 17, 0.7)',
+                            borderColor: '#F2C811',
+                            borderWidth: 1,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: 'Order Volume',
+                            data: countByMonth,
+                            type: 'line',
+                            borderColor: '#38BDF8',
+                            backgroundColor: '#38BDF8',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { grid: { color: '#232D42' }, ticks: { color: '#94A3B8' } },
+                        y: { 
+                            grid: { color: '#232D42' }, 
+                            ticks: { color: '#94A3B8', callback: v => '$' + (v/1000) + 'k' },
+                            position: 'left'
+                        },
+                        y1: { 
+                            grid: { drawOnChartArea: false }, 
+                            ticks: { color: '#38BDF8' },
+                            position: 'right'
+                        }
+                    },
+                    plugins: {
+                        legend: { labels: { color: '#F8FAFC' } }
+                    }
+                }
+            });
+        }
+
+        function renderCategoryChart() {
+            const catMap = {};
+            filteredSalesData.forEach(d => {
+                catMap[d.category] = (catMap[d.category] || 0) + d.amount;
+            });
+
+            const labels = Object.keys(catMap);
+            const data = Object.values(catMap);
+
+            const ctx = document.getElementById("categoryChart").getContext("2d");
+            if (categoryChartObj) categoryChartObj.destroy();
+
+            categoryChartObj = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: ['#F2C811', '#38BDF8', '#22C55E', '#A855F7', '#EF4444'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right', labels: { color: '#F8FAFC', font: { size: 11 } } }
+                    }
+                }
+            });
+        }
+
+        function renderCityChart() {
+            const cityMap = {};
+            filteredSalesData.forEach(d => {
+                cityMap[d.city] = (cityMap[d.city] || 0) + d.amount;
+            });
+
+            const sortedCities = Object.entries(cityMap).sort((a, b) => b[1] - a[1]).slice(0, 7);
+            const labels = sortedCities.map(c => c[0]);
+            const data = sortedCities.map(c => c[1]);
+
+            const ctx = document.getElementById("cityChart").getContext("2d");
+            if (cityChartObj) cityChartObj.destroy();
+
+            cityChartObj = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Revenue by City ($)',
+                        data: data,
+                        backgroundColor: 'rgba(56, 189, 248, 0.7)',
+                        borderColor: '#38BDF8',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { grid: { color: '#232D42' }, ticks: { color: '#94A3B8', callback: v => '$' + (v/1000) + 'k' } },
+                        y: { grid: { color: '#232D42' }, ticks: { color: '#F8FAFC' } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function renderStatusChart() {
+            const statusMap = { COMPLETED: 0, PENDING: 0, CANCELLED: 0 };
+            filteredSalesData.forEach(d => {
+                statusMap[d.status] = (statusMap[d.status] || 0) + 1;
+            });
+
+            const ctx = document.getElementById("statusChart").getContext("2d");
+            if (statusChartObj) statusChartObj.destroy();
+
+            statusChartObj = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Completed', 'Pending', 'Cancelled'],
+                    datasets: [{
+                        data: [statusMap.COMPLETED, statusMap.PENDING, statusMap.CANCELLED],
+                        backgroundColor: ['#22C55E', '#FACC15', '#EF4444'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { color: '#F8FAFC' } }
+                    }
+                }
+            });
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById("tableBody");
+            tbody.innerHTML = "";
+
+            filteredSalesData.slice(0, 50).forEach(d => {
+                const dateStr = d.order_date.toISOString().split('T')[0];
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td style="font-family: monospace; font-weight: 600;">${d.order_id}</td>
+                    <td>${d.customer_name}</td>
+                    <td>${d.city}</td>
+                    <td>${d.category}</td>
+                    <td>${d.product}</td>
+                    <td style="font-weight: 600;">$${d.amount.toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
+                    <td><span class="status-badge ${d.status}">${d.status}</span></td>
+                    <td style="color: var(--text-secondary);">${dateStr}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function filterTable() {
+            const q = document.getElementById("tableSearch").value.toLowerCase();
+            const rows = document.querySelectorAll("#tableBody tr");
+            rows.forEach(r => {
+                const text = r.innerText.toLowerCase();
+                r.style.display = text.includes(q) ? "" : "none";
+            });
+        }
+
+        function refreshDashboard() {
+            generateDataset();
+            applyFilters();
+        }
+
+        function openDaxModal() {
+            document.getElementById("daxModal").style.display = "flex";
+        }
+
+        function closeDaxModal() {
+            document.getElementById("daxModal").style.display = "none";
+        }
+
+        function exportDataCSV() {
+            let csv = "order_id,customer_name,city,category,product,amount,status,order_date\n";
+            rawSalesData.forEach(d => {
+                csv += `${d.order_id},"${d.customer_name}",${d.city},"${d.category}","${d.product}",${d.amount},${d.status},${d.order_date.toISOString()}\n`;
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.setAttribute('download', 'powerbi_fact_sales_dummy_2026.csv');
+            a.click();
+        }
+
+        // Initialize dashboard on page load
+        generateDataset();
+        renderDashboard();
+    </script>
+</body>
+</html>

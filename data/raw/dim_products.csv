@@ -1,0 +1,16 @@
+product_key,product_id,name,category,unit_price
+1,PROD-2001,DataPulse Suite v4,Cloud Software,13933.75
+2,PROD-2002,Cloud Sync Pro,Cloud Software,11511.48
+3,PROD-2003,API Gateway Enterprise,Cloud Software,8823.37
+4,PROD-2004,Quantum Blade Server X1,Enterprise Hardware,7603.14
+5,PROD-2005,Storage Array SAN-500,Enterprise Hardware,9035.56
+6,PROD-2006,Edge Compute Gateway,Enterprise Hardware,5397.74
+7,PROD-2007,BI Analytics Studio,Analytics Suite,9668.18
+8,PROD-2008,Stream Processing Hub,Analytics Suite,13536.25
+9,PROD-2009,Predictive Engine AI,Analytics Suite,5489.62
+10,PROD-2010,GPU Acceleration Node,AI Infrastructure,14948.55
+11,PROD-2011,Model Training Pipeline,AI Infrastructure,8557.41
+12,PROD-2012,LLM Inference Engine,AI Infrastructure,9468.95
+13,PROD-2013,Zero Trust Shield,Cybersecurity,2359.44
+14,PROD-2014,Security Audit Agent,Cybersecurity,2409.31
+15,PROD-2015,Identity Vault Pro,Cybersecurity,5853.6

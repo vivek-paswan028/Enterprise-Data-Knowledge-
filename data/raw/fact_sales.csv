@@ -1,0 +1,601 @@
+sales_key,order_id,customer_key,customer_id,customer_name,city,product_key,product_name,category,amount,quantity,status,order_date
+1,ORD-2026-10001,49,CUST-1049,Enterprise Client 49,Seattle,7,BI Analytics Studio,Analytics Suite,42514.13,4,COMPLETED,2026-01-17 11:10:00
+2,ORD-2026-10002,38,CUST-1038,Enterprise Client 38,Berlin,8,Stream Processing Hub,Analytics Suite,12408.02,1,PENDING,2026-02-21 12:54:00
+3,ORD-2026-10003,18,CUST-1018,Enterprise Client 18,Tokyo,4,Quantum Blade Server X1,Enterprise Hardware,8146.61,1,PENDING,2026-05-11 09:25:00
+4,ORD-2026-10004,7,CUST-1007,Enterprise Client 7,San Francisco,15,Identity Vault Pro,Cybersecurity,18041.22,3,COMPLETED,2026-01-10 16:27:00
+5,ORD-2026-10005,20,CUST-1020,Enterprise Client 20,Chicago,12,LLM Inference Engine,AI Infrastructure,9469.18,1,COMPLETED,2026-08-13 09:29:00
+6,ORD-2026-10006,14,CUST-1014,Enterprise Client 14,Seattle,8,Stream Processing Hub,Analytics Suite,27176.48,2,PENDING,2026-04-04 14:46:00
+7,ORD-2026-10007,36,CUST-1036,Enterprise Client 36,Toronto,13,Zero Trust Shield,Cybersecurity,4741.9,2,COMPLETED,2026-01-18 18:51:00
+8,ORD-2026-10008,2,CUST-1002,Enterprise Client 2,Seattle,13,Zero Trust Shield,Cybersecurity,10345.88,4,COMPLETED,2026-06-01 12:45:00
+9,ORD-2026-10009,8,CUST-1008,Enterprise Client 8,Seattle,10,GPU Acceleration Node,AI Infrastructure,69245.88,5,CANCELLED,2026-05-19 12:01:00
+10,ORD-2026-10010,11,CUST-1011,Enterprise Client 11,New York,8,Stream Processing Hub,Analytics Suite,14416.69,1,PENDING,2026-01-12 13:08:00
+11,ORD-2026-10011,8,CUST-1008,Enterprise Client 8,Seattle,7,BI Analytics Studio,Analytics Suite,36913.25,4,COMPLETED,2026-07-19 12:10:00
+12,ORD-2026-10012,8,CUST-1008,Enterprise Client 8,Seattle,10,GPU Acceleration Node,AI Infrastructure,76988.11,5,PENDING,2026-01-01 12:54:00
+13,ORD-2026-10013,2,CUST-1002,Enterprise Client 2,Seattle,9,Predictive Engine AI,Analytics Suite,15743.68,3,COMPLETED,2026-04-12 18:06:00
+14,ORD-2026-10014,15,CUST-1015,Enterprise Client 15,Sydney,9,Predictive Engine AI,Analytics Suite,5730.39,1,COMPLETED,2026-05-09 11:10:00
+15,ORD-2026-10015,18,CUST-1018,Enterprise Client 18,Tokyo,15,Identity Vault Pro,Cybersecurity,23687.1,4,COMPLETED,2026-02-22 17:02:00
+16,ORD-2026-10016,31,CUST-1031,Enterprise Client 31,Berlin,6,Edge Compute Gateway,Enterprise Hardware,10027.28,2,COMPLETED,2026-08-14 10:47:00
+17,ORD-2026-10017,20,CUST-1020,Enterprise Client 20,Chicago,1,DataPulse Suite v4,Cloud Software,13807.35,1,COMPLETED,2026-03-22 09:27:00
+18,ORD-2026-10018,30,CUST-1030,Enterprise Client 30,Sydney,5,Storage Array SAN-500,Enterprise Hardware,49517.29,5,COMPLETED,2026-04-04 17:30:00
+19,ORD-2026-10019,35,CUST-1035,Enterprise Client 35,Berlin,15,Identity Vault Pro,Cybersecurity,18328.61,3,COMPLETED,2026-03-19 18:45:00
+20,ORD-2026-10020,41,CUST-1041,Enterprise Client 41,Seattle,12,LLM Inference Engine,AI Infrastructure,28436.87,3,COMPLETED,2026-04-11 11:11:00
+21,ORD-2026-10021,11,CUST-1011,Enterprise Client 11,New York,5,Storage Array SAN-500,Enterprise Hardware,38451.96,4,COMPLETED,2026-05-02 08:56:00
+22,ORD-2026-10022,18,CUST-1018,Enterprise Client 18,Tokyo,9,Predictive Engine AI,Analytics Suite,11380.22,2,PENDING,2026-05-16 15:52:00
+23,ORD-2026-10023,2,CUST-1002,Enterprise Client 2,Seattle,10,GPU Acceleration Node,AI Infrastructure,69253.04,5,CANCELLED,2026-05-04 10:50:00
+24,ORD-2026-10024,40,CUST-1040,Enterprise Client 40,London,6,Edge Compute Gateway,Enterprise Hardware,5523.21,1,COMPLETED,2026-08-16 16:14:00
+25,ORD-2026-10025,18,CUST-1018,Enterprise Client 18,Tokyo,15,Identity Vault Pro,Cybersecurity,12586.97,2,PENDING,2026-05-29 12:07:00
+26,ORD-2026-10026,19,CUST-1019,Enterprise Client 19,London,3,API Gateway Enterprise,Cloud Software,47068.57,5,COMPLETED,2026-07-08 14:21:00
+27,ORD-2026-10027,5,CUST-1005,Enterprise Client 5,Austin,1,DataPulse Suite v4,Cloud Software,66235.26,5,COMPLETED,2026-05-12 15:12:00
+28,ORD-2026-10028,39,CUST-1039,Enterprise Client 39,Seattle,6,Edge Compute Gateway,Enterprise Hardware,11847.19,2,COMPLETED,2026-05-26 08:09:00
+29,ORD-2026-10029,22,CUST-1022,Enterprise Client 22,Austin,13,Zero Trust Shield,Cybersecurity,2372.69,1,COMPLETED,2026-01-27 15:51:00
+30,ORD-2026-10030,50,CUST-1050,Enterprise Client 50,Austin,5,Storage Array SAN-500,Enterprise Hardware,28491.47,3,CANCELLED,2026-08-16 09:22:00
+31,ORD-2026-10031,30,CUST-1030,Enterprise Client 30,Sydney,15,Identity Vault Pro,Cybersecurity,11149.26,2,COMPLETED,2026-01-12 13:26:00
+32,ORD-2026-10032,20,CUST-1020,Enterprise Client 20,Chicago,15,Identity Vault Pro,Cybersecurity,5676.79,1,COMPLETED,2026-01-12 16:53:00
+33,ORD-2026-10033,42,CUST-1042,Enterprise Client 42,Austin,12,LLM Inference Engine,AI Infrastructure,27546.53,3,COMPLETED,2026-07-14 13:45:00
+34,ORD-2026-10034,3,CUST-1003,Enterprise Client 3,Seattle,3,API Gateway Enterprise,Cloud Software,17384.37,2,COMPLETED,2026-04-12 13:17:00
+35,ORD-2026-10035,31,CUST-1031,Enterprise Client 31,Berlin,15,Identity Vault Pro,Cybersecurity,5278.67,1,COMPLETED,2026-08-17 17:15:00
+36,ORD-2026-10036,40,CUST-1040,Enterprise Client 40,London,11,Model Training Pipeline,AI Infrastructure,43052.93,5,COMPLETED,2026-02-16 17:17:00
+37,ORD-2026-10037,49,CUST-1049,Enterprise Client 49,Seattle,6,Edge Compute Gateway,Enterprise Hardware,22498.18,4,COMPLETED,2026-06-30 13:09:00
+38,ORD-2026-10038,2,CUST-1002,Enterprise Client 2,Seattle,8,Stream Processing Hub,Analytics Suite,41771.23,3,COMPLETED,2026-07-15 18:31:00
+39,ORD-2026-10039,14,CUST-1014,Enterprise Client 14,Seattle,7,BI Analytics Studio,Analytics Suite,9269.2,1,CANCELLED,2026-08-15 11:57:00
+40,ORD-2026-10040,24,CUST-1024,Enterprise Client 24,Toronto,8,Stream Processing Hub,Analytics Suite,42799.0,3,PENDING,2026-08-01 14:18:00
+41,ORD-2026-10041,37,CUST-1037,Enterprise Client 37,San Francisco,15,Identity Vault Pro,Cybersecurity,18973.9,3,PENDING,2026-08-19 09:03:00
+42,ORD-2026-10042,41,CUST-1041,Enterprise Client 41,Seattle,11,Model Training Pipeline,AI Infrastructure,41778.85,5,PENDING,2026-07-09 17:07:00
+43,ORD-2026-10043,26,CUST-1026,Enterprise Client 26,Tokyo,5,Storage Array SAN-500,Enterprise Hardware,19325.34,2,COMPLETED,2026-07-06 16:11:00
+44,ORD-2026-10044,2,CUST-1002,Enterprise Client 2,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,13782.01,2,COMPLETED,2026-05-06 12:39:00
+45,ORD-2026-10045,23,CUST-1023,Enterprise Client 23,Seattle,12,LLM Inference Engine,AI Infrastructure,46784.49,5,COMPLETED,2026-05-26 18:22:00
+46,ORD-2026-10046,42,CUST-1042,Enterprise Client 42,Austin,9,Predictive Engine AI,Analytics Suite,5790.23,1,COMPLETED,2026-02-24 10:34:00
+47,ORD-2026-10047,27,CUST-1027,Enterprise Client 27,Toronto,7,BI Analytics Studio,Analytics Suite,19580.04,2,COMPLETED,2026-04-22 08:25:00
+48,ORD-2026-10048,36,CUST-1036,Enterprise Client 36,Toronto,7,BI Analytics Studio,Analytics Suite,28580.01,3,COMPLETED,2026-06-19 09:32:00
+49,ORD-2026-10049,19,CUST-1019,Enterprise Client 19,London,12,LLM Inference Engine,AI Infrastructure,9160.28,1,COMPLETED,2026-07-01 17:56:00
+50,ORD-2026-10050,3,CUST-1003,Enterprise Client 3,Seattle,5,Storage Array SAN-500,Enterprise Hardware,28848.26,3,CANCELLED,2026-02-16 10:46:00
+51,ORD-2026-10051,27,CUST-1027,Enterprise Client 27,Toronto,6,Edge Compute Gateway,Enterprise Hardware,5554.98,1,CANCELLED,2026-08-08 11:13:00
+52,ORD-2026-10052,15,CUST-1015,Enterprise Client 15,Sydney,14,Security Audit Agent,Cybersecurity,6707.18,3,PENDING,2026-02-14 16:17:00
+53,ORD-2026-10053,40,CUST-1040,Enterprise Client 40,London,5,Storage Array SAN-500,Enterprise Hardware,9829.2,1,COMPLETED,2026-05-13 08:14:00
+54,ORD-2026-10054,42,CUST-1042,Enterprise Client 42,Austin,1,DataPulse Suite v4,Cloud Software,54462.52,4,COMPLETED,2026-06-05 08:30:00
+55,ORD-2026-10055,7,CUST-1007,Enterprise Client 7,San Francisco,12,LLM Inference Engine,AI Infrastructure,8806.17,1,PENDING,2026-08-17 18:02:00
+56,ORD-2026-10056,12,CUST-1012,Enterprise Client 12,Chicago,5,Storage Array SAN-500,Enterprise Hardware,34060.37,4,COMPLETED,2026-02-19 08:31:00
+57,ORD-2026-10057,22,CUST-1022,Enterprise Client 22,Austin,6,Edge Compute Gateway,Enterprise Hardware,16495.07,3,COMPLETED,2026-07-16 17:03:00
+58,ORD-2026-10058,44,CUST-1044,Enterprise Client 44,Austin,4,Quantum Blade Server X1,Enterprise Hardware,14654.44,2,COMPLETED,2026-07-01 15:24:00
+59,ORD-2026-10059,34,CUST-1034,Enterprise Client 34,Berlin,11,Model Training Pipeline,AI Infrastructure,46985.44,5,CANCELLED,2026-03-22 17:03:00
+60,ORD-2026-10060,20,CUST-1020,Enterprise Client 20,Chicago,5,Storage Array SAN-500,Enterprise Hardware,25898.07,3,COMPLETED,2026-01-21 18:08:00
+61,ORD-2026-10061,33,CUST-1033,Enterprise Client 33,Seattle,7,BI Analytics Studio,Analytics Suite,45656.86,5,COMPLETED,2026-04-08 18:39:00
+62,ORD-2026-10062,44,CUST-1044,Enterprise Client 44,Austin,10,GPU Acceleration Node,AI Infrastructure,58100.26,4,COMPLETED,2026-07-04 18:05:00
+63,ORD-2026-10063,42,CUST-1042,Enterprise Client 42,Austin,3,API Gateway Enterprise,Cloud Software,17627.72,2,CANCELLED,2026-03-10 15:55:00
+64,ORD-2026-10064,25,CUST-1025,Enterprise Client 25,Berlin,3,API Gateway Enterprise,Cloud Software,9571.38,1,COMPLETED,2026-07-17 10:58:00
+65,ORD-2026-10065,34,CUST-1034,Enterprise Client 34,Berlin,9,Predictive Engine AI,Analytics Suite,17845.59,3,PENDING,2026-02-26 18:51:00
+66,ORD-2026-10066,27,CUST-1027,Enterprise Client 27,Toronto,13,Zero Trust Shield,Cybersecurity,11562.33,5,COMPLETED,2026-03-14 18:41:00
+67,ORD-2026-10067,4,CUST-1004,Enterprise Client 4,Toronto,10,GPU Acceleration Node,AI Infrastructure,27810.24,2,COMPLETED,2026-03-06 12:49:00
+68,ORD-2026-10068,12,CUST-1012,Enterprise Client 12,Chicago,8,Stream Processing Hub,Analytics Suite,68381.32,5,CANCELLED,2026-06-15 10:11:00
+69,ORD-2026-10069,30,CUST-1030,Enterprise Client 30,Sydney,8,Stream Processing Hub,Analytics Suite,59447.57,4,COMPLETED,2026-03-09 13:05:00
+70,ORD-2026-10070,9,CUST-1009,Enterprise Client 9,Tokyo,14,Security Audit Agent,Cybersecurity,4813.53,2,COMPLETED,2026-06-13 10:12:00
+71,ORD-2026-10071,44,CUST-1044,Enterprise Client 44,Austin,9,Predictive Engine AI,Analytics Suite,15041.59,3,COMPLETED,2026-07-13 08:33:00
+72,ORD-2026-10072,26,CUST-1026,Enterprise Client 26,Tokyo,3,API Gateway Enterprise,Cloud Software,16989.43,2,COMPLETED,2026-03-24 13:17:00
+73,ORD-2026-10073,49,CUST-1049,Enterprise Client 49,Seattle,9,Predictive Engine AI,Analytics Suite,25196.35,5,COMPLETED,2026-07-06 15:06:00
+74,ORD-2026-10074,34,CUST-1034,Enterprise Client 34,Berlin,4,Quantum Blade Server X1,Enterprise Hardware,32943.53,4,COMPLETED,2026-06-21 11:23:00
+75,ORD-2026-10075,16,CUST-1016,Enterprise Client 16,San Francisco,10,GPU Acceleration Node,AI Infrastructure,15451.56,1,COMPLETED,2026-03-11 13:53:00
+76,ORD-2026-10076,34,CUST-1034,Enterprise Client 34,Berlin,6,Edge Compute Gateway,Enterprise Hardware,19461.07,4,COMPLETED,2026-07-09 09:20:00
+77,ORD-2026-10077,49,CUST-1049,Enterprise Client 49,Seattle,15,Identity Vault Pro,Cybersecurity,24374.04,4,PENDING,2026-01-10 18:20:00
+78,ORD-2026-10078,27,CUST-1027,Enterprise Client 27,Toronto,9,Predictive Engine AI,Analytics Suite,11864.1,2,COMPLETED,2026-08-18 18:03:00
+79,ORD-2026-10079,19,CUST-1019,Enterprise Client 19,London,15,Identity Vault Pro,Cybersecurity,27182.45,5,CANCELLED,2026-08-19 12:02:00
+80,ORD-2026-10080,43,CUST-1043,Enterprise Client 43,Tokyo,15,Identity Vault Pro,Cybersecurity,31854.05,5,PENDING,2026-07-05 10:24:00
+81,ORD-2026-10081,38,CUST-1038,Enterprise Client 38,Berlin,6,Edge Compute Gateway,Enterprise Hardware,5382.25,1,COMPLETED,2026-01-04 17:36:00
+82,ORD-2026-10082,9,CUST-1009,Enterprise Client 9,Tokyo,2,Cloud Sync Pro,Cloud Software,50092.88,4,COMPLETED,2026-01-04 14:03:00
+83,ORD-2026-10083,39,CUST-1039,Enterprise Client 39,Seattle,7,BI Analytics Studio,Analytics Suite,51444.8,5,CANCELLED,2026-07-12 17:23:00
+84,ORD-2026-10084,2,CUST-1002,Enterprise Client 2,Seattle,3,API Gateway Enterprise,Cloud Software,27301.83,3,CANCELLED,2026-08-14 18:18:00
+85,ORD-2026-10085,4,CUST-1004,Enterprise Client 4,Toronto,10,GPU Acceleration Node,AI Infrastructure,27044.71,2,PENDING,2026-01-27 09:16:00
+86,ORD-2026-10086,29,CUST-1029,Enterprise Client 29,Toronto,3,API Gateway Enterprise,Cloud Software,47006.11,5,PENDING,2026-05-20 14:42:00
+87,ORD-2026-10087,2,CUST-1002,Enterprise Client 2,Seattle,1,DataPulse Suite v4,Cloud Software,66224.54,5,COMPLETED,2026-02-01 09:46:00
+88,ORD-2026-10088,35,CUST-1035,Enterprise Client 35,Berlin,7,BI Analytics Studio,Analytics Suite,50299.28,5,COMPLETED,2026-05-07 09:56:00
+89,ORD-2026-10089,13,CUST-1013,Enterprise Client 13,Sydney,5,Storage Array SAN-500,Enterprise Hardware,33811.82,4,CANCELLED,2026-04-24 13:39:00
+90,ORD-2026-10090,12,CUST-1012,Enterprise Client 12,Chicago,15,Identity Vault Pro,Cybersecurity,12261.21,2,PENDING,2026-08-10 09:53:00
+91,ORD-2026-10091,50,CUST-1050,Enterprise Client 50,Austin,2,Cloud Sync Pro,Cloud Software,33531.59,3,COMPLETED,2026-05-14 16:37:00
+92,ORD-2026-10092,27,CUST-1027,Enterprise Client 27,Toronto,3,API Gateway Enterprise,Cloud Software,8164.55,1,CANCELLED,2026-07-15 08:41:00
+93,ORD-2026-10093,46,CUST-1046,Enterprise Client 46,Berlin,7,BI Analytics Studio,Analytics Suite,9779.29,1,CANCELLED,2026-08-05 14:58:00
+94,ORD-2026-10094,22,CUST-1022,Enterprise Client 22,Austin,14,Security Audit Agent,Cybersecurity,9956.1,4,COMPLETED,2026-02-11 15:14:00
+95,ORD-2026-10095,32,CUST-1032,Enterprise Client 32,Berlin,11,Model Training Pipeline,AI Infrastructure,27608.02,3,COMPLETED,2026-08-10 09:49:00
+96,ORD-2026-10096,29,CUST-1029,Enterprise Client 29,Toronto,5,Storage Array SAN-500,Enterprise Hardware,9645.68,1,COMPLETED,2026-07-28 18:48:00
+97,ORD-2026-10097,12,CUST-1012,Enterprise Client 12,Chicago,9,Predictive Engine AI,Analytics Suite,5521.43,1,CANCELLED,2026-07-14 09:30:00
+98,ORD-2026-10098,33,CUST-1033,Enterprise Client 33,Seattle,7,BI Analytics Studio,Analytics Suite,21149.2,2,COMPLETED,2026-02-11 15:40:00
+99,ORD-2026-10099,37,CUST-1037,Enterprise Client 37,San Francisco,1,DataPulse Suite v4,Cloud Software,53030.0,4,CANCELLED,2026-02-11 12:10:00
+100,ORD-2026-10100,8,CUST-1008,Enterprise Client 8,Seattle,2,Cloud Sync Pro,Cloud Software,54176.5,5,PENDING,2026-04-11 14:02:00
+101,ORD-2026-10101,16,CUST-1016,Enterprise Client 16,San Francisco,8,Stream Processing Hub,Analytics Suite,26394.78,2,COMPLETED,2026-06-22 16:24:00
+102,ORD-2026-10102,22,CUST-1022,Enterprise Client 22,Austin,6,Edge Compute Gateway,Enterprise Hardware,15806.06,3,COMPLETED,2026-05-22 17:16:00
+103,ORD-2026-10103,47,CUST-1047,Enterprise Client 47,Seattle,12,LLM Inference Engine,AI Infrastructure,19000.33,2,COMPLETED,2026-04-24 18:38:00
+104,ORD-2026-10104,42,CUST-1042,Enterprise Client 42,Austin,11,Model Training Pipeline,AI Infrastructure,31516.22,4,COMPLETED,2026-07-12 08:45:00
+105,ORD-2026-10105,49,CUST-1049,Enterprise Client 49,Seattle,9,Predictive Engine AI,Analytics Suite,5831.19,1,COMPLETED,2026-07-10 17:02:00
+106,ORD-2026-10106,13,CUST-1013,Enterprise Client 13,Sydney,6,Edge Compute Gateway,Enterprise Hardware,22892.88,4,CANCELLED,2026-04-15 16:29:00
+107,ORD-2026-10107,50,CUST-1050,Enterprise Client 50,Austin,12,LLM Inference Engine,AI Infrastructure,40193.87,4,CANCELLED,2026-07-16 15:06:00
+108,ORD-2026-10108,22,CUST-1022,Enterprise Client 22,Austin,7,BI Analytics Studio,Analytics Suite,26700.38,3,PENDING,2026-05-22 10:46:00
+109,ORD-2026-10109,33,CUST-1033,Enterprise Client 33,Seattle,12,LLM Inference Engine,AI Infrastructure,27893.18,3,COMPLETED,2026-05-04 16:56:00
+110,ORD-2026-10110,40,CUST-1040,Enterprise Client 40,London,6,Edge Compute Gateway,Enterprise Hardware,10812.55,2,COMPLETED,2026-05-10 09:26:00
+111,ORD-2026-10111,11,CUST-1011,Enterprise Client 11,New York,6,Edge Compute Gateway,Enterprise Hardware,10489.39,2,COMPLETED,2026-01-11 12:18:00
+112,ORD-2026-10112,7,CUST-1007,Enterprise Client 7,San Francisco,2,Cloud Sync Pro,Cloud Software,10847.03,1,COMPLETED,2026-02-23 13:02:00
+113,ORD-2026-10113,50,CUST-1050,Enterprise Client 50,Austin,11,Model Training Pipeline,AI Infrastructure,18122.79,2,CANCELLED,2026-06-18 16:02:00
+114,ORD-2026-10114,7,CUST-1007,Enterprise Client 7,San Francisco,6,Edge Compute Gateway,Enterprise Hardware,19798.81,4,COMPLETED,2026-02-07 10:01:00
+115,ORD-2026-10115,50,CUST-1050,Enterprise Client 50,Austin,3,API Gateway Enterprise,Cloud Software,47467.58,5,COMPLETED,2026-08-19 11:23:00
+116,ORD-2026-10116,41,CUST-1041,Enterprise Client 41,Seattle,7,BI Analytics Studio,Analytics Suite,37149.82,4,COMPLETED,2026-06-19 11:50:00
+117,ORD-2026-10117,50,CUST-1050,Enterprise Client 50,Austin,9,Predictive Engine AI,Analytics Suite,28486.35,5,PENDING,2026-06-29 18:32:00
+118,ORD-2026-10118,25,CUST-1025,Enterprise Client 25,Berlin,8,Stream Processing Hub,Analytics Suite,12611.11,1,COMPLETED,2026-06-19 16:14:00
+119,ORD-2026-10119,28,CUST-1028,Enterprise Client 28,New York,15,Identity Vault Pro,Cybersecurity,23524.23,4,PENDING,2026-02-18 17:59:00
+120,ORD-2026-10120,12,CUST-1012,Enterprise Client 12,Chicago,14,Security Audit Agent,Cybersecurity,10873.9,5,COMPLETED,2026-06-04 11:15:00
+121,ORD-2026-10121,12,CUST-1012,Enterprise Client 12,Chicago,9,Predictive Engine AI,Analytics Suite,22984.86,4,COMPLETED,2026-01-20 17:01:00
+122,ORD-2026-10122,17,CUST-1017,Enterprise Client 17,San Francisco,14,Security Audit Agent,Cybersecurity,4392.17,2,COMPLETED,2026-07-09 14:15:00
+123,ORD-2026-10123,11,CUST-1011,Enterprise Client 11,New York,1,DataPulse Suite v4,Cloud Software,26806.68,2,CANCELLED,2026-05-31 08:20:00
+124,ORD-2026-10124,29,CUST-1029,Enterprise Client 29,Toronto,6,Edge Compute Gateway,Enterprise Hardware,17636.87,3,CANCELLED,2026-05-22 08:41:00
+125,ORD-2026-10125,8,CUST-1008,Enterprise Client 8,Seattle,15,Identity Vault Pro,Cybersecurity,16697.91,3,COMPLETED,2026-07-09 10:33:00
+126,ORD-2026-10126,11,CUST-1011,Enterprise Client 11,New York,7,BI Analytics Studio,Analytics Suite,46999.31,5,CANCELLED,2026-07-26 10:21:00
+127,ORD-2026-10127,44,CUST-1044,Enterprise Client 44,Austin,1,DataPulse Suite v4,Cloud Software,25154.37,2,PENDING,2026-01-05 16:33:00
+128,ORD-2026-10128,24,CUST-1024,Enterprise Client 24,Toronto,8,Stream Processing Hub,Analytics Suite,51217.5,4,CANCELLED,2026-05-27 18:54:00
+129,ORD-2026-10129,30,CUST-1030,Enterprise Client 30,Sydney,13,Zero Trust Shield,Cybersecurity,6899.27,3,COMPLETED,2026-06-14 17:16:00
+130,ORD-2026-10130,26,CUST-1026,Enterprise Client 26,Tokyo,7,BI Analytics Studio,Analytics Suite,26612.69,3,COMPLETED,2026-06-02 14:37:00
+131,ORD-2026-10131,38,CUST-1038,Enterprise Client 38,Berlin,15,Identity Vault Pro,Cybersecurity,11147.66,2,COMPLETED,2026-04-02 14:36:00
+132,ORD-2026-10132,10,CUST-1010,Enterprise Client 10,Austin,14,Security Audit Agent,Cybersecurity,9379.42,4,CANCELLED,2026-06-23 09:08:00
+133,ORD-2026-10133,41,CUST-1041,Enterprise Client 41,Seattle,10,GPU Acceleration Node,AI Infrastructure,45499.41,3,COMPLETED,2026-07-24 14:21:00
+134,ORD-2026-10134,36,CUST-1036,Enterprise Client 36,Toronto,6,Edge Compute Gateway,Enterprise Hardware,26694.74,5,COMPLETED,2026-03-11 08:24:00
+135,ORD-2026-10135,47,CUST-1047,Enterprise Client 47,Seattle,13,Zero Trust Shield,Cybersecurity,2402.27,1,PENDING,2026-01-22 09:28:00
+136,ORD-2026-10136,15,CUST-1015,Enterprise Client 15,Sydney,8,Stream Processing Hub,Analytics Suite,40361.49,3,COMPLETED,2026-04-22 15:09:00
+137,ORD-2026-10137,50,CUST-1050,Enterprise Client 50,Austin,15,Identity Vault Pro,Cybersecurity,5322.29,1,COMPLETED,2026-05-10 16:15:00
+138,ORD-2026-10138,41,CUST-1041,Enterprise Client 41,Seattle,11,Model Training Pipeline,AI Infrastructure,17073.63,2,PENDING,2026-06-27 18:51:00
+139,ORD-2026-10139,9,CUST-1009,Enterprise Client 9,Tokyo,11,Model Training Pipeline,AI Infrastructure,18428.85,2,COMPLETED,2026-08-15 09:58:00
+140,ORD-2026-10140,14,CUST-1014,Enterprise Client 14,Seattle,7,BI Analytics Studio,Analytics Suite,10008.31,1,COMPLETED,2026-01-29 18:40:00
+141,ORD-2026-10141,40,CUST-1040,Enterprise Client 40,London,10,GPU Acceleration Node,AI Infrastructure,82101.87,5,COMPLETED,2026-07-04 11:36:00
+142,ORD-2026-10142,33,CUST-1033,Enterprise Client 33,Seattle,10,GPU Acceleration Node,AI Infrastructure,57405.1,4,PENDING,2026-05-14 14:47:00
+143,ORD-2026-10143,24,CUST-1024,Enterprise Client 24,Toronto,11,Model Training Pipeline,AI Infrastructure,17724.16,2,COMPLETED,2026-08-09 08:43:00
+144,ORD-2026-10144,8,CUST-1008,Enterprise Client 8,Seattle,5,Storage Array SAN-500,Enterprise Hardware,35429.32,4,COMPLETED,2026-07-07 11:59:00
+145,ORD-2026-10145,31,CUST-1031,Enterprise Client 31,Berlin,11,Model Training Pipeline,AI Infrastructure,27493.09,3,COMPLETED,2026-02-25 10:18:00
+146,ORD-2026-10146,45,CUST-1045,Enterprise Client 45,New York,13,Zero Trust Shield,Cybersecurity,9147.09,4,COMPLETED,2026-05-14 11:33:00
+147,ORD-2026-10147,24,CUST-1024,Enterprise Client 24,Toronto,14,Security Audit Agent,Cybersecurity,9157.31,4,COMPLETED,2026-02-15 15:15:00
+148,ORD-2026-10148,38,CUST-1038,Enterprise Client 38,Berlin,7,BI Analytics Studio,Analytics Suite,10253.46,1,COMPLETED,2026-08-07 15:55:00
+149,ORD-2026-10149,37,CUST-1037,Enterprise Client 37,San Francisco,15,Identity Vault Pro,Cybersecurity,27192.42,5,COMPLETED,2026-02-28 14:16:00
+150,ORD-2026-10150,44,CUST-1044,Enterprise Client 44,Austin,8,Stream Processing Hub,Analytics Suite,64125.82,5,COMPLETED,2026-06-24 08:39:00
+151,ORD-2026-10151,32,CUST-1032,Enterprise Client 32,Berlin,10,GPU Acceleration Node,AI Infrastructure,55756.82,4,COMPLETED,2026-02-22 10:41:00
+152,ORD-2026-10152,11,CUST-1011,Enterprise Client 11,New York,13,Zero Trust Shield,Cybersecurity,7539.68,3,COMPLETED,2026-03-26 11:55:00
+153,ORD-2026-10153,45,CUST-1045,Enterprise Client 45,New York,6,Edge Compute Gateway,Enterprise Hardware,28928.04,5,COMPLETED,2026-07-20 17:12:00
+154,ORD-2026-10154,15,CUST-1015,Enterprise Client 15,Sydney,10,GPU Acceleration Node,AI Infrastructure,54199.02,4,CANCELLED,2026-02-27 08:48:00
+155,ORD-2026-10155,28,CUST-1028,Enterprise Client 28,New York,8,Stream Processing Hub,Analytics Suite,39775.9,3,PENDING,2026-06-15 08:19:00
+156,ORD-2026-10156,18,CUST-1018,Enterprise Client 18,Tokyo,12,LLM Inference Engine,AI Infrastructure,18509.06,2,PENDING,2026-04-12 18:32:00
+157,ORD-2026-10157,42,CUST-1042,Enterprise Client 42,Austin,4,Quantum Blade Server X1,Enterprise Hardware,13760.64,2,COMPLETED,2026-03-13 14:59:00
+158,ORD-2026-10158,26,CUST-1026,Enterprise Client 26,Tokyo,11,Model Training Pipeline,AI Infrastructure,43652.54,5,COMPLETED,2026-07-23 18:24:00
+159,ORD-2026-10159,13,CUST-1013,Enterprise Client 13,Sydney,9,Predictive Engine AI,Analytics Suite,5665.88,1,COMPLETED,2026-04-18 12:04:00
+160,ORD-2026-10160,22,CUST-1022,Enterprise Client 22,Austin,1,DataPulse Suite v4,Cloud Software,76432.06,5,COMPLETED,2026-06-06 17:04:00
+161,ORD-2026-10161,44,CUST-1044,Enterprise Client 44,Austin,2,Cloud Sync Pro,Cloud Software,24673.25,2,COMPLETED,2026-03-08 18:30:00
+162,ORD-2026-10162,48,CUST-1048,Enterprise Client 48,Sydney,13,Zero Trust Shield,Cybersecurity,11716.41,5,COMPLETED,2026-04-22 10:07:00
+163,ORD-2026-10163,2,CUST-1002,Enterprise Client 2,Seattle,1,DataPulse Suite v4,Cloud Software,67845.96,5,CANCELLED,2026-06-20 15:50:00
+164,ORD-2026-10164,18,CUST-1018,Enterprise Client 18,Tokyo,1,DataPulse Suite v4,Cloud Software,45816.79,3,COMPLETED,2026-05-13 13:16:00
+165,ORD-2026-10165,13,CUST-1013,Enterprise Client 13,Sydney,4,Quantum Blade Server X1,Enterprise Hardware,37275.98,5,COMPLETED,2026-01-10 10:53:00
+166,ORD-2026-10166,5,CUST-1005,Enterprise Client 5,Austin,2,Cloud Sync Pro,Cloud Software,47065.56,4,CANCELLED,2026-05-19 10:36:00
+167,ORD-2026-10167,3,CUST-1003,Enterprise Client 3,Seattle,3,API Gateway Enterprise,Cloud Software,47777.27,5,CANCELLED,2026-01-29 12:59:00
+168,ORD-2026-10168,15,CUST-1015,Enterprise Client 15,Sydney,1,DataPulse Suite v4,Cloud Software,26727.4,2,COMPLETED,2026-07-20 16:41:00
+169,ORD-2026-10169,42,CUST-1042,Enterprise Client 42,Austin,10,GPU Acceleration Node,AI Infrastructure,42169.19,3,COMPLETED,2026-01-03 18:44:00
+170,ORD-2026-10170,4,CUST-1004,Enterprise Client 4,Toronto,4,Quantum Blade Server X1,Enterprise Hardware,33398.17,4,COMPLETED,2026-04-22 15:28:00
+171,ORD-2026-10171,20,CUST-1020,Enterprise Client 20,Chicago,10,GPU Acceleration Node,AI Infrastructure,70230.22,5,COMPLETED,2026-08-08 10:17:00
+172,ORD-2026-10172,49,CUST-1049,Enterprise Client 49,Seattle,9,Predictive Engine AI,Analytics Suite,28832.45,5,PENDING,2026-07-01 18:02:00
+173,ORD-2026-10173,31,CUST-1031,Enterprise Client 31,Berlin,10,GPU Acceleration Node,AI Infrastructure,41482.66,3,COMPLETED,2026-01-20 11:18:00
+174,ORD-2026-10174,18,CUST-1018,Enterprise Client 18,Tokyo,14,Security Audit Agent,Cybersecurity,7815.23,3,COMPLETED,2026-04-26 16:59:00
+175,ORD-2026-10175,48,CUST-1048,Enterprise Client 48,Sydney,9,Predictive Engine AI,Analytics Suite,10663.2,2,COMPLETED,2026-07-21 18:29:00
+176,ORD-2026-10176,43,CUST-1043,Enterprise Client 43,Tokyo,1,DataPulse Suite v4,Cloud Software,43732.24,3,CANCELLED,2026-05-08 18:07:00
+177,ORD-2026-10177,29,CUST-1029,Enterprise Client 29,Toronto,15,Identity Vault Pro,Cybersecurity,5549.23,1,CANCELLED,2026-03-20 15:26:00
+178,ORD-2026-10178,13,CUST-1013,Enterprise Client 13,Sydney,6,Edge Compute Gateway,Enterprise Hardware,5417.33,1,COMPLETED,2026-06-26 08:32:00
+179,ORD-2026-10179,17,CUST-1017,Enterprise Client 17,San Francisco,5,Storage Array SAN-500,Enterprise Hardware,9572.19,1,COMPLETED,2026-02-07 13:41:00
+180,ORD-2026-10180,4,CUST-1004,Enterprise Client 4,Toronto,1,DataPulse Suite v4,Cloud Software,14607.36,1,PENDING,2026-04-16 13:49:00
+181,ORD-2026-10181,48,CUST-1048,Enterprise Client 48,Sydney,10,GPU Acceleration Node,AI Infrastructure,13964.94,1,COMPLETED,2026-02-17 11:11:00
+182,ORD-2026-10182,37,CUST-1037,Enterprise Client 37,San Francisco,7,BI Analytics Studio,Analytics Suite,31209.7,3,COMPLETED,2026-01-20 08:51:00
+183,ORD-2026-10183,48,CUST-1048,Enterprise Client 48,Sydney,4,Quantum Blade Server X1,Enterprise Hardware,13785.96,2,COMPLETED,2026-04-30 10:58:00
+184,ORD-2026-10184,9,CUST-1009,Enterprise Client 9,Tokyo,8,Stream Processing Hub,Analytics Suite,25439.45,2,COMPLETED,2026-07-03 16:46:00
+185,ORD-2026-10185,32,CUST-1032,Enterprise Client 32,Berlin,15,Identity Vault Pro,Cybersecurity,22156.75,4,COMPLETED,2026-01-16 10:01:00
+186,ORD-2026-10186,2,CUST-1002,Enterprise Client 2,Seattle,8,Stream Processing Hub,Analytics Suite,57646.75,4,COMPLETED,2026-06-23 16:02:00
+187,ORD-2026-10187,9,CUST-1009,Enterprise Client 9,Tokyo,7,BI Analytics Studio,Analytics Suite,27290.68,3,CANCELLED,2026-04-24 14:47:00
+188,ORD-2026-10188,7,CUST-1007,Enterprise Client 7,San Francisco,5,Storage Array SAN-500,Enterprise Hardware,35055.97,4,COMPLETED,2026-07-19 15:04:00
+189,ORD-2026-10189,46,CUST-1046,Enterprise Client 46,Berlin,2,Cloud Sync Pro,Cloud Software,24500.43,2,COMPLETED,2026-01-27 14:34:00
+190,ORD-2026-10190,13,CUST-1013,Enterprise Client 13,Sydney,3,API Gateway Enterprise,Cloud Software,40902.25,5,COMPLETED,2026-07-14 18:55:00
+191,ORD-2026-10191,10,CUST-1010,Enterprise Client 10,Austin,8,Stream Processing Hub,Analytics Suite,14478.54,1,CANCELLED,2026-04-01 13:44:00
+192,ORD-2026-10192,34,CUST-1034,Enterprise Client 34,Berlin,1,DataPulse Suite v4,Cloud Software,25557.43,2,CANCELLED,2026-02-28 08:45:00
+193,ORD-2026-10193,29,CUST-1029,Enterprise Client 29,Toronto,14,Security Audit Agent,Cybersecurity,2364.42,1,COMPLETED,2026-05-11 15:24:00
+194,ORD-2026-10194,20,CUST-1020,Enterprise Client 20,Chicago,14,Security Audit Agent,Cybersecurity,7869.44,3,CANCELLED,2026-06-14 08:14:00
+195,ORD-2026-10195,43,CUST-1043,Enterprise Client 43,Tokyo,2,Cloud Sync Pro,Cloud Software,11998.43,1,CANCELLED,2026-03-11 10:16:00
+196,ORD-2026-10196,5,CUST-1005,Enterprise Client 5,Austin,5,Storage Array SAN-500,Enterprise Hardware,19576.75,2,PENDING,2026-08-01 15:32:00
+197,ORD-2026-10197,45,CUST-1045,Enterprise Client 45,New York,13,Zero Trust Shield,Cybersecurity,11384.43,5,PENDING,2026-08-13 11:27:00
+198,ORD-2026-10198,37,CUST-1037,Enterprise Client 37,San Francisco,3,API Gateway Enterprise,Cloud Software,26668.1,3,COMPLETED,2026-04-18 12:05:00
+199,ORD-2026-10199,20,CUST-1020,Enterprise Client 20,Chicago,3,API Gateway Enterprise,Cloud Software,44957.61,5,COMPLETED,2026-04-10 15:10:00
+200,ORD-2026-10200,47,CUST-1047,Enterprise Client 47,Seattle,10,GPU Acceleration Node,AI Infrastructure,69525.81,5,COMPLETED,2026-07-19 14:03:00
+201,ORD-2026-10201,44,CUST-1044,Enterprise Client 44,Austin,9,Predictive Engine AI,Analytics Suite,5641.36,1,CANCELLED,2026-02-13 15:39:00
+202,ORD-2026-10202,26,CUST-1026,Enterprise Client 26,Tokyo,14,Security Audit Agent,Cybersecurity,8904.1,4,PENDING,2026-04-25 17:59:00
+203,ORD-2026-10203,41,CUST-1041,Enterprise Client 41,Seattle,12,LLM Inference Engine,AI Infrastructure,29896.12,3,CANCELLED,2026-03-05 12:51:00
+204,ORD-2026-10204,37,CUST-1037,Enterprise Client 37,San Francisco,7,BI Analytics Studio,Analytics Suite,34899.79,4,COMPLETED,2026-01-12 09:36:00
+205,ORD-2026-10205,27,CUST-1027,Enterprise Client 27,Toronto,6,Edge Compute Gateway,Enterprise Hardware,16202.46,3,COMPLETED,2026-06-26 14:23:00
+206,ORD-2026-10206,47,CUST-1047,Enterprise Client 47,Seattle,13,Zero Trust Shield,Cybersecurity,12185.79,5,COMPLETED,2026-07-25 16:28:00
+207,ORD-2026-10207,24,CUST-1024,Enterprise Client 24,Toronto,4,Quantum Blade Server X1,Enterprise Hardware,7647.1,1,COMPLETED,2026-08-03 11:12:00
+208,ORD-2026-10208,9,CUST-1009,Enterprise Client 9,Tokyo,5,Storage Array SAN-500,Enterprise Hardware,28018.31,3,CANCELLED,2026-04-27 14:44:00
+209,ORD-2026-10209,48,CUST-1048,Enterprise Client 48,Sydney,12,LLM Inference Engine,AI Infrastructure,28900.81,3,COMPLETED,2026-01-30 15:25:00
+210,ORD-2026-10210,38,CUST-1038,Enterprise Client 38,Berlin,4,Quantum Blade Server X1,Enterprise Hardware,15153.36,2,COMPLETED,2026-05-15 18:38:00
+211,ORD-2026-10211,33,CUST-1033,Enterprise Client 33,Seattle,14,Security Audit Agent,Cybersecurity,11902.14,5,COMPLETED,2026-07-02 13:34:00
+212,ORD-2026-10212,10,CUST-1010,Enterprise Client 10,Austin,14,Security Audit Agent,Cybersecurity,4623.95,2,CANCELLED,2026-01-15 11:02:00
+213,ORD-2026-10213,1,CUST-1001,Enterprise Client 1,San Francisco,14,Security Audit Agent,Cybersecurity,9280.14,4,COMPLETED,2026-05-04 17:34:00
+214,ORD-2026-10214,10,CUST-1010,Enterprise Client 10,Austin,15,Identity Vault Pro,Cybersecurity,25217.99,4,CANCELLED,2026-03-11 16:50:00
+215,ORD-2026-10215,50,CUST-1050,Enterprise Client 50,Austin,2,Cloud Sync Pro,Cloud Software,48016.97,4,COMPLETED,2026-02-06 14:16:00
+216,ORD-2026-10216,43,CUST-1043,Enterprise Client 43,Tokyo,5,Storage Array SAN-500,Enterprise Hardware,17083.67,2,PENDING,2026-05-10 11:34:00
+217,ORD-2026-10217,10,CUST-1010,Enterprise Client 10,Austin,8,Stream Processing Hub,Analytics Suite,39046.79,3,COMPLETED,2026-05-06 10:27:00
+218,ORD-2026-10218,10,CUST-1010,Enterprise Client 10,Austin,9,Predictive Engine AI,Analytics Suite,21037.15,4,COMPLETED,2026-08-17 09:18:00
+219,ORD-2026-10219,48,CUST-1048,Enterprise Client 48,Sydney,12,LLM Inference Engine,AI Infrastructure,20431.78,2,COMPLETED,2026-05-10 15:14:00
+220,ORD-2026-10220,47,CUST-1047,Enterprise Client 47,Seattle,10,GPU Acceleration Node,AI Infrastructure,44774.36,3,CANCELLED,2026-01-09 13:07:00
+221,ORD-2026-10221,26,CUST-1026,Enterprise Client 26,Tokyo,5,Storage Array SAN-500,Enterprise Hardware,49157.14,5,COMPLETED,2026-02-07 18:24:00
+222,ORD-2026-10222,43,CUST-1043,Enterprise Client 43,Tokyo,10,GPU Acceleration Node,AI Infrastructure,40725.14,3,COMPLETED,2026-06-22 15:51:00
+223,ORD-2026-10223,40,CUST-1040,Enterprise Client 40,London,13,Zero Trust Shield,Cybersecurity,7393.38,3,PENDING,2026-01-02 13:58:00
+224,ORD-2026-10224,37,CUST-1037,Enterprise Client 37,San Francisco,7,BI Analytics Studio,Analytics Suite,18815.59,2,COMPLETED,2026-03-04 17:18:00
+225,ORD-2026-10225,28,CUST-1028,Enterprise Client 28,New York,7,BI Analytics Studio,Analytics Suite,51390.85,5,PENDING,2026-04-22 13:20:00
+226,ORD-2026-10226,22,CUST-1022,Enterprise Client 22,Austin,8,Stream Processing Hub,Analytics Suite,41507.3,3,COMPLETED,2026-07-04 16:03:00
+227,ORD-2026-10227,42,CUST-1042,Enterprise Client 42,Austin,5,Storage Array SAN-500,Enterprise Hardware,47234.65,5,COMPLETED,2026-01-04 17:42:00
+228,ORD-2026-10228,8,CUST-1008,Enterprise Client 8,Seattle,1,DataPulse Suite v4,Cloud Software,15253.49,1,CANCELLED,2026-08-12 09:51:00
+229,ORD-2026-10229,15,CUST-1015,Enterprise Client 15,Sydney,2,Cloud Sync Pro,Cloud Software,22238.76,2,COMPLETED,2026-06-07 16:41:00
+230,ORD-2026-10230,40,CUST-1040,Enterprise Client 40,London,3,API Gateway Enterprise,Cloud Software,32503.6,4,COMPLETED,2026-07-08 10:34:00
+231,ORD-2026-10231,12,CUST-1012,Enterprise Client 12,Chicago,14,Security Audit Agent,Cybersecurity,2491.19,1,CANCELLED,2026-03-06 11:21:00
+232,ORD-2026-10232,3,CUST-1003,Enterprise Client 3,Seattle,3,API Gateway Enterprise,Cloud Software,47768.59,5,CANCELLED,2026-01-17 11:48:00
+233,ORD-2026-10233,17,CUST-1017,Enterprise Client 17,San Francisco,6,Edge Compute Gateway,Enterprise Hardware,16122.48,3,COMPLETED,2026-07-04 12:56:00
+234,ORD-2026-10234,6,CUST-1006,Enterprise Client 6,Seattle,12,LLM Inference Engine,AI Infrastructure,9598.8,1,CANCELLED,2026-04-11 14:54:00
+235,ORD-2026-10235,14,CUST-1014,Enterprise Client 14,Seattle,9,Predictive Engine AI,Analytics Suite,26612.02,5,COMPLETED,2026-01-23 10:34:00
+236,ORD-2026-10236,38,CUST-1038,Enterprise Client 38,Berlin,3,API Gateway Enterprise,Cloud Software,16339.93,2,COMPLETED,2026-01-20 12:12:00
+237,ORD-2026-10237,38,CUST-1038,Enterprise Client 38,Berlin,15,Identity Vault Pro,Cybersecurity,24871.9,4,COMPLETED,2026-04-03 17:14:00
+238,ORD-2026-10238,15,CUST-1015,Enterprise Client 15,Sydney,4,Quantum Blade Server X1,Enterprise Hardware,24269.99,3,COMPLETED,2026-04-20 08:20:00
+239,ORD-2026-10239,5,CUST-1005,Enterprise Client 5,Austin,10,GPU Acceleration Node,AI Infrastructure,14277.67,1,COMPLETED,2026-02-21 11:30:00
+240,ORD-2026-10240,39,CUST-1039,Enterprise Client 39,Seattle,5,Storage Array SAN-500,Enterprise Hardware,9028.46,1,CANCELLED,2026-06-29 12:46:00
+241,ORD-2026-10241,17,CUST-1017,Enterprise Client 17,San Francisco,6,Edge Compute Gateway,Enterprise Hardware,15334.23,3,CANCELLED,2026-02-24 16:37:00
+242,ORD-2026-10242,37,CUST-1037,Enterprise Client 37,San Francisco,4,Quantum Blade Server X1,Enterprise Hardware,30067.22,4,CANCELLED,2026-01-20 11:47:00
+243,ORD-2026-10243,19,CUST-1019,Enterprise Client 19,London,14,Security Audit Agent,Cybersecurity,11162.74,5,COMPLETED,2026-04-11 17:55:00
+244,ORD-2026-10244,9,CUST-1009,Enterprise Client 9,Tokyo,6,Edge Compute Gateway,Enterprise Hardware,11461.72,2,COMPLETED,2026-01-04 10:36:00
+245,ORD-2026-10245,36,CUST-1036,Enterprise Client 36,Toronto,14,Security Audit Agent,Cybersecurity,6745.34,3,COMPLETED,2026-04-03 15:10:00
+246,ORD-2026-10246,9,CUST-1009,Enterprise Client 9,Tokyo,2,Cloud Sync Pro,Cloud Software,61907.79,5,COMPLETED,2026-04-11 13:05:00
+247,ORD-2026-10247,44,CUST-1044,Enterprise Client 44,Austin,4,Quantum Blade Server X1,Enterprise Hardware,21937.34,3,COMPLETED,2026-02-09 18:10:00
+248,ORD-2026-10248,36,CUST-1036,Enterprise Client 36,Toronto,12,LLM Inference Engine,AI Infrastructure,9692.08,1,PENDING,2026-01-06 16:54:00
+249,ORD-2026-10249,18,CUST-1018,Enterprise Client 18,Tokyo,6,Edge Compute Gateway,Enterprise Hardware,5849.3,1,COMPLETED,2026-05-18 08:23:00
+250,ORD-2026-10250,19,CUST-1019,Enterprise Client 19,London,8,Stream Processing Hub,Analytics Suite,12776.56,1,COMPLETED,2026-04-25 10:59:00
+251,ORD-2026-10251,17,CUST-1017,Enterprise Client 17,San Francisco,12,LLM Inference Engine,AI Infrastructure,39218.78,4,COMPLETED,2026-05-08 09:53:00
+252,ORD-2026-10252,13,CUST-1013,Enterprise Client 13,Sydney,2,Cloud Sync Pro,Cloud Software,12551.42,1,CANCELLED,2026-07-27 15:56:00
+253,ORD-2026-10253,30,CUST-1030,Enterprise Client 30,Sydney,14,Security Audit Agent,Cybersecurity,11711.24,5,COMPLETED,2026-03-17 17:56:00
+254,ORD-2026-10254,47,CUST-1047,Enterprise Client 47,Seattle,12,LLM Inference Engine,AI Infrastructure,31217.77,3,COMPLETED,2026-01-06 12:47:00
+255,ORD-2026-10255,3,CUST-1003,Enterprise Client 3,Seattle,12,LLM Inference Engine,AI Infrastructure,45054.22,5,COMPLETED,2026-04-18 17:54:00
+256,ORD-2026-10256,47,CUST-1047,Enterprise Client 47,Seattle,13,Zero Trust Shield,Cybersecurity,9099.5,4,COMPLETED,2026-07-17 13:25:00
+257,ORD-2026-10257,25,CUST-1025,Enterprise Client 25,Berlin,15,Identity Vault Pro,Cybersecurity,12596.54,2,CANCELLED,2026-06-12 09:10:00
+258,ORD-2026-10258,33,CUST-1033,Enterprise Client 33,Seattle,15,Identity Vault Pro,Cybersecurity,18504.71,3,COMPLETED,2026-06-11 09:19:00
+259,ORD-2026-10259,40,CUST-1040,Enterprise Client 40,London,15,Identity Vault Pro,Cybersecurity,17302.06,3,PENDING,2026-07-06 14:09:00
+260,ORD-2026-10260,21,CUST-1021,Enterprise Client 21,Sydney,12,LLM Inference Engine,AI Infrastructure,19099.1,2,PENDING,2026-07-30 08:50:00
+261,ORD-2026-10261,37,CUST-1037,Enterprise Client 37,San Francisco,14,Security Audit Agent,Cybersecurity,4956.85,2,PENDING,2026-05-20 11:32:00
+262,ORD-2026-10262,18,CUST-1018,Enterprise Client 18,Tokyo,6,Edge Compute Gateway,Enterprise Hardware,22373.84,4,CANCELLED,2026-03-22 15:28:00
+263,ORD-2026-10263,32,CUST-1032,Enterprise Client 32,Berlin,3,API Gateway Enterprise,Cloud Software,45268.11,5,CANCELLED,2026-02-19 16:07:00
+264,ORD-2026-10264,12,CUST-1012,Enterprise Client 12,Chicago,14,Security Audit Agent,Cybersecurity,12501.12,5,COMPLETED,2026-07-19 12:13:00
+265,ORD-2026-10265,31,CUST-1031,Enterprise Client 31,Berlin,13,Zero Trust Shield,Cybersecurity,11065.82,5,PENDING,2026-04-18 12:18:00
+266,ORD-2026-10266,28,CUST-1028,Enterprise Client 28,New York,4,Quantum Blade Server X1,Enterprise Hardware,24528.9,3,COMPLETED,2026-02-02 10:18:00
+267,ORD-2026-10267,28,CUST-1028,Enterprise Client 28,New York,7,BI Analytics Studio,Analytics Suite,43843.88,5,COMPLETED,2026-02-20 14:10:00
+268,ORD-2026-10268,28,CUST-1028,Enterprise Client 28,New York,2,Cloud Sync Pro,Cloud Software,11967.24,1,COMPLETED,2026-08-19 09:48:00
+269,ORD-2026-10269,36,CUST-1036,Enterprise Client 36,Toronto,6,Edge Compute Gateway,Enterprise Hardware,5171.36,1,COMPLETED,2026-08-17 12:53:00
+270,ORD-2026-10270,26,CUST-1026,Enterprise Client 26,Tokyo,2,Cloud Sync Pro,Cloud Software,23663.45,2,PENDING,2026-02-16 15:29:00
+271,ORD-2026-10271,35,CUST-1035,Enterprise Client 35,Berlin,10,GPU Acceleration Node,AI Infrastructure,46864.24,3,CANCELLED,2026-04-23 08:20:00
+272,ORD-2026-10272,12,CUST-1012,Enterprise Client 12,Chicago,7,BI Analytics Studio,Analytics Suite,46503.73,5,COMPLETED,2026-07-26 14:29:00
+273,ORD-2026-10273,38,CUST-1038,Enterprise Client 38,Berlin,8,Stream Processing Hub,Analytics Suite,29569.45,2,COMPLETED,2026-03-13 18:13:00
+274,ORD-2026-10274,23,CUST-1023,Enterprise Client 23,Seattle,7,BI Analytics Studio,Analytics Suite,9645.46,1,COMPLETED,2026-05-01 08:37:00
+275,ORD-2026-10275,40,CUST-1040,Enterprise Client 40,London,13,Zero Trust Shield,Cybersecurity,4878.12,2,COMPLETED,2026-02-07 09:58:00
+276,ORD-2026-10276,23,CUST-1023,Enterprise Client 23,Seattle,5,Storage Array SAN-500,Enterprise Hardware,9533.5,1,COMPLETED,2026-03-13 14:08:00
+277,ORD-2026-10277,48,CUST-1048,Enterprise Client 48,Sydney,7,BI Analytics Studio,Analytics Suite,42386.28,4,PENDING,2026-07-01 08:25:00
+278,ORD-2026-10278,15,CUST-1015,Enterprise Client 15,Sydney,5,Storage Array SAN-500,Enterprise Hardware,46191.68,5,COMPLETED,2026-04-23 12:58:00
+279,ORD-2026-10279,43,CUST-1043,Enterprise Client 43,Tokyo,5,Storage Array SAN-500,Enterprise Hardware,16640.27,2,COMPLETED,2026-05-13 10:54:00
+280,ORD-2026-10280,12,CUST-1012,Enterprise Client 12,Chicago,6,Edge Compute Gateway,Enterprise Hardware,22001.68,4,COMPLETED,2026-01-03 14:22:00
+281,ORD-2026-10281,45,CUST-1045,Enterprise Client 45,New York,14,Security Audit Agent,Cybersecurity,2448.81,1,COMPLETED,2026-08-09 10:51:00
+282,ORD-2026-10282,44,CUST-1044,Enterprise Client 44,Austin,12,LLM Inference Engine,AI Infrastructure,19698.27,2,PENDING,2026-03-01 18:48:00
+283,ORD-2026-10283,25,CUST-1025,Enterprise Client 25,Berlin,11,Model Training Pipeline,AI Infrastructure,36814.93,4,PENDING,2026-07-07 12:46:00
+284,ORD-2026-10284,3,CUST-1003,Enterprise Client 3,Seattle,14,Security Audit Agent,Cybersecurity,4849.33,2,COMPLETED,2026-05-03 12:25:00
+285,ORD-2026-10285,49,CUST-1049,Enterprise Client 49,Seattle,6,Edge Compute Gateway,Enterprise Hardware,15167.99,3,COMPLETED,2026-07-24 11:58:00
+286,ORD-2026-10286,32,CUST-1032,Enterprise Client 32,Berlin,1,DataPulse Suite v4,Cloud Software,59892.0,4,COMPLETED,2026-06-11 13:19:00
+287,ORD-2026-10287,6,CUST-1006,Enterprise Client 6,Seattle,5,Storage Array SAN-500,Enterprise Hardware,9823.73,1,COMPLETED,2026-01-07 08:37:00
+288,ORD-2026-10288,33,CUST-1033,Enterprise Client 33,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,39512.28,5,COMPLETED,2026-03-03 16:58:00
+289,ORD-2026-10289,19,CUST-1019,Enterprise Client 19,London,2,Cloud Sync Pro,Cloud Software,21238.13,2,PENDING,2026-05-12 15:39:00
+290,ORD-2026-10290,27,CUST-1027,Enterprise Client 27,Toronto,5,Storage Array SAN-500,Enterprise Hardware,16908.24,2,COMPLETED,2026-02-25 15:32:00
+291,ORD-2026-10291,37,CUST-1037,Enterprise Client 37,San Francisco,8,Stream Processing Hub,Analytics Suite,13141.16,1,COMPLETED,2026-07-04 09:48:00
+292,ORD-2026-10292,11,CUST-1011,Enterprise Client 11,New York,5,Storage Array SAN-500,Enterprise Hardware,28293.11,3,CANCELLED,2026-07-18 18:05:00
+293,ORD-2026-10293,31,CUST-1031,Enterprise Client 31,Berlin,1,DataPulse Suite v4,Cloud Software,39827.57,3,COMPLETED,2026-06-27 18:21:00
+294,ORD-2026-10294,40,CUST-1040,Enterprise Client 40,London,6,Edge Compute Gateway,Enterprise Hardware,22788.55,4,COMPLETED,2026-04-02 15:24:00
+295,ORD-2026-10295,16,CUST-1016,Enterprise Client 16,San Francisco,2,Cloud Sync Pro,Cloud Software,33251.4,3,COMPLETED,2026-07-22 12:32:00
+296,ORD-2026-10296,3,CUST-1003,Enterprise Client 3,Seattle,2,Cloud Sync Pro,Cloud Software,57081.26,5,COMPLETED,2026-03-10 11:05:00
+297,ORD-2026-10297,16,CUST-1016,Enterprise Client 16,San Francisco,3,API Gateway Enterprise,Cloud Software,34069.07,4,COMPLETED,2026-04-07 08:44:00
+298,ORD-2026-10298,43,CUST-1043,Enterprise Client 43,Tokyo,10,GPU Acceleration Node,AI Infrastructure,60271.36,4,PENDING,2026-02-15 16:13:00
+299,ORD-2026-10299,10,CUST-1010,Enterprise Client 10,Austin,5,Storage Array SAN-500,Enterprise Hardware,28778.7,3,COMPLETED,2026-07-01 17:23:00
+300,ORD-2026-10300,34,CUST-1034,Enterprise Client 34,Berlin,3,API Gateway Enterprise,Cloud Software,18813.72,2,COMPLETED,2026-06-22 11:21:00
+301,ORD-2026-10301,36,CUST-1036,Enterprise Client 36,Toronto,8,Stream Processing Hub,Analytics Suite,74409.23,5,COMPLETED,2026-04-29 12:51:00
+302,ORD-2026-10302,50,CUST-1050,Enterprise Client 50,Austin,8,Stream Processing Hub,Analytics Suite,26705.02,2,COMPLETED,2026-07-19 10:11:00
+303,ORD-2026-10303,23,CUST-1023,Enterprise Client 23,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,37278.1,5,PENDING,2026-08-13 11:10:00
+304,ORD-2026-10304,38,CUST-1038,Enterprise Client 38,Berlin,12,LLM Inference Engine,AI Infrastructure,20002.65,2,CANCELLED,2026-01-29 12:06:00
+305,ORD-2026-10305,47,CUST-1047,Enterprise Client 47,Seattle,9,Predictive Engine AI,Analytics Suite,17965.26,3,PENDING,2026-02-02 16:02:00
+306,ORD-2026-10306,43,CUST-1043,Enterprise Client 43,Tokyo,13,Zero Trust Shield,Cybersecurity,8784.19,4,COMPLETED,2026-02-03 10:53:00
+307,ORD-2026-10307,23,CUST-1023,Enterprise Client 23,Seattle,1,DataPulse Suite v4,Cloud Software,42548.5,3,PENDING,2026-08-07 09:41:00
+308,ORD-2026-10308,9,CUST-1009,Enterprise Client 9,Tokyo,10,GPU Acceleration Node,AI Infrastructure,15169.4,1,COMPLETED,2026-07-25 09:47:00
+309,ORD-2026-10309,11,CUST-1011,Enterprise Client 11,New York,2,Cloud Sync Pro,Cloud Software,12477.5,1,COMPLETED,2026-02-11 16:32:00
+310,ORD-2026-10310,2,CUST-1002,Enterprise Client 2,Seattle,14,Security Audit Agent,Cybersecurity,13185.83,5,COMPLETED,2026-06-07 18:06:00
+311,ORD-2026-10311,29,CUST-1029,Enterprise Client 29,Toronto,8,Stream Processing Hub,Analytics Suite,13445.4,1,PENDING,2026-06-05 14:32:00
+312,ORD-2026-10312,49,CUST-1049,Enterprise Client 49,Seattle,13,Zero Trust Shield,Cybersecurity,5026.44,2,CANCELLED,2026-01-16 12:56:00
+313,ORD-2026-10313,14,CUST-1014,Enterprise Client 14,Seattle,15,Identity Vault Pro,Cybersecurity,6184.89,1,COMPLETED,2026-04-22 15:25:00
+314,ORD-2026-10314,10,CUST-1010,Enterprise Client 10,Austin,6,Edge Compute Gateway,Enterprise Hardware,27426.5,5,COMPLETED,2026-04-28 15:42:00
+315,ORD-2026-10315,28,CUST-1028,Enterprise Client 28,New York,9,Predictive Engine AI,Analytics Suite,5400.84,1,COMPLETED,2026-03-31 11:13:00
+316,ORD-2026-10316,33,CUST-1033,Enterprise Client 33,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,16308.58,2,CANCELLED,2026-08-08 10:17:00
+317,ORD-2026-10317,21,CUST-1021,Enterprise Client 21,Sydney,15,Identity Vault Pro,Cybersecurity,16258.51,3,CANCELLED,2026-06-11 18:00:00
+318,ORD-2026-10318,34,CUST-1034,Enterprise Client 34,Berlin,10,GPU Acceleration Node,AI Infrastructure,70908.36,5,COMPLETED,2026-04-21 13:10:00
+319,ORD-2026-10319,28,CUST-1028,Enterprise Client 28,New York,14,Security Audit Agent,Cybersecurity,6724.98,3,PENDING,2026-08-18 14:06:00
+320,ORD-2026-10320,3,CUST-1003,Enterprise Client 3,Seattle,12,LLM Inference Engine,AI Infrastructure,9017.45,1,COMPLETED,2026-08-07 18:40:00
+321,ORD-2026-10321,15,CUST-1015,Enterprise Client 15,Sydney,9,Predictive Engine AI,Analytics Suite,5957.89,1,COMPLETED,2026-02-06 11:58:00
+322,ORD-2026-10322,40,CUST-1040,Enterprise Client 40,London,14,Security Audit Agent,Cybersecurity,11766.27,5,PENDING,2026-01-17 08:07:00
+323,ORD-2026-10323,39,CUST-1039,Enterprise Client 39,Seattle,2,Cloud Sync Pro,Cloud Software,23928.28,2,COMPLETED,2026-02-13 18:48:00
+324,ORD-2026-10324,23,CUST-1023,Enterprise Client 23,Seattle,12,LLM Inference Engine,AI Infrastructure,17988.56,2,COMPLETED,2026-03-24 18:21:00
+325,ORD-2026-10325,24,CUST-1024,Enterprise Client 24,Toronto,3,API Gateway Enterprise,Cloud Software,46109.04,5,PENDING,2026-02-28 15:22:00
+326,ORD-2026-10326,30,CUST-1030,Enterprise Client 30,Sydney,3,API Gateway Enterprise,Cloud Software,37930.19,4,PENDING,2026-04-23 16:40:00
+327,ORD-2026-10327,21,CUST-1021,Enterprise Client 21,Sydney,9,Predictive Engine AI,Analytics Suite,26516.52,5,COMPLETED,2026-04-28 12:11:00
+328,ORD-2026-10328,28,CUST-1028,Enterprise Client 28,New York,1,DataPulse Suite v4,Cloud Software,13058.72,1,PENDING,2026-04-26 16:11:00
+329,ORD-2026-10329,35,CUST-1035,Enterprise Client 35,Berlin,11,Model Training Pipeline,AI Infrastructure,24646.48,3,COMPLETED,2026-06-25 18:22:00
+330,ORD-2026-10330,4,CUST-1004,Enterprise Client 4,Toronto,7,BI Analytics Studio,Analytics Suite,47322.26,5,COMPLETED,2026-03-30 09:47:00
+331,ORD-2026-10331,50,CUST-1050,Enterprise Client 50,Austin,13,Zero Trust Shield,Cybersecurity,7707.79,3,COMPLETED,2026-07-07 11:36:00
+332,ORD-2026-10332,27,CUST-1027,Enterprise Client 27,Toronto,8,Stream Processing Hub,Analytics Suite,14770.53,1,COMPLETED,2026-07-25 08:08:00
+333,ORD-2026-10333,12,CUST-1012,Enterprise Client 12,Chicago,12,LLM Inference Engine,AI Infrastructure,20307.29,2,CANCELLED,2026-03-26 16:44:00
+334,ORD-2026-10334,40,CUST-1040,Enterprise Client 40,London,4,Quantum Blade Server X1,Enterprise Hardware,15479.39,2,CANCELLED,2026-05-17 14:43:00
+335,ORD-2026-10335,24,CUST-1024,Enterprise Client 24,Toronto,3,API Gateway Enterprise,Cloud Software,24835.12,3,PENDING,2026-06-26 17:12:00
+336,ORD-2026-10336,49,CUST-1049,Enterprise Client 49,Seattle,12,LLM Inference Engine,AI Infrastructure,42707.93,5,COMPLETED,2026-04-21 09:53:00
+337,ORD-2026-10337,1,CUST-1001,Enterprise Client 1,San Francisco,10,GPU Acceleration Node,AI Infrastructure,29473.77,2,COMPLETED,2026-08-11 14:48:00
+338,ORD-2026-10338,27,CUST-1027,Enterprise Client 27,Toronto,4,Quantum Blade Server X1,Enterprise Hardware,41049.41,5,PENDING,2026-06-29 12:22:00
+339,ORD-2026-10339,50,CUST-1050,Enterprise Client 50,Austin,1,DataPulse Suite v4,Cloud Software,76183.66,5,COMPLETED,2026-08-09 11:37:00
+340,ORD-2026-10340,41,CUST-1041,Enterprise Client 41,Seattle,10,GPU Acceleration Node,AI Infrastructure,46786.56,3,PENDING,2026-04-13 12:26:00
+341,ORD-2026-10341,15,CUST-1015,Enterprise Client 15,Sydney,1,DataPulse Suite v4,Cloud Software,38659.73,3,PENDING,2026-03-17 18:37:00
+342,ORD-2026-10342,13,CUST-1013,Enterprise Client 13,Sydney,8,Stream Processing Hub,Analytics Suite,37903.8,3,COMPLETED,2026-01-25 13:08:00
+343,ORD-2026-10343,20,CUST-1020,Enterprise Client 20,Chicago,8,Stream Processing Hub,Analytics Suite,14546.88,1,CANCELLED,2026-01-22 12:17:00
+344,ORD-2026-10344,15,CUST-1015,Enterprise Client 15,Sydney,3,API Gateway Enterprise,Cloud Software,46548.81,5,COMPLETED,2026-05-16 11:41:00
+345,ORD-2026-10345,9,CUST-1009,Enterprise Client 9,Tokyo,10,GPU Acceleration Node,AI Infrastructure,71157.23,5,COMPLETED,2026-01-19 16:23:00
+346,ORD-2026-10346,3,CUST-1003,Enterprise Client 3,Seattle,12,LLM Inference Engine,AI Infrastructure,27046.96,3,COMPLETED,2026-07-23 17:53:00
+347,ORD-2026-10347,20,CUST-1020,Enterprise Client 20,Chicago,13,Zero Trust Shield,Cybersecurity,4263.81,2,COMPLETED,2026-05-22 14:35:00
+348,ORD-2026-10348,17,CUST-1017,Enterprise Client 17,San Francisco,9,Predictive Engine AI,Analytics Suite,16185.17,3,PENDING,2026-02-12 09:51:00
+349,ORD-2026-10349,35,CUST-1035,Enterprise Client 35,Berlin,4,Quantum Blade Server X1,Enterprise Hardware,22979.26,3,COMPLETED,2026-04-07 15:28:00
+350,ORD-2026-10350,22,CUST-1022,Enterprise Client 22,Austin,6,Edge Compute Gateway,Enterprise Hardware,28259.24,5,COMPLETED,2026-02-17 17:42:00
+351,ORD-2026-10351,28,CUST-1028,Enterprise Client 28,New York,7,BI Analytics Studio,Analytics Suite,10050.83,1,COMPLETED,2026-06-05 12:16:00
+352,ORD-2026-10352,4,CUST-1004,Enterprise Client 4,Toronto,9,Predictive Engine AI,Analytics Suite,18010.41,3,COMPLETED,2026-04-12 08:49:00
+353,ORD-2026-10353,23,CUST-1023,Enterprise Client 23,Seattle,2,Cloud Sync Pro,Cloud Software,24395.66,2,CANCELLED,2026-07-13 14:46:00
+354,ORD-2026-10354,4,CUST-1004,Enterprise Client 4,Toronto,3,API Gateway Enterprise,Cloud Software,31779.76,4,CANCELLED,2026-05-25 09:15:00
+355,ORD-2026-10355,41,CUST-1041,Enterprise Client 41,Seattle,15,Identity Vault Pro,Cybersecurity,31423.62,5,COMPLETED,2026-02-21 17:59:00
+356,ORD-2026-10356,18,CUST-1018,Enterprise Client 18,Tokyo,2,Cloud Sync Pro,Cloud Software,32398.59,3,CANCELLED,2026-03-17 11:17:00
+357,ORD-2026-10357,15,CUST-1015,Enterprise Client 15,Sydney,2,Cloud Sync Pro,Cloud Software,11326.65,1,PENDING,2026-07-25 13:17:00
+358,ORD-2026-10358,17,CUST-1017,Enterprise Client 17,San Francisco,6,Edge Compute Gateway,Enterprise Hardware,11598.77,2,COMPLETED,2026-06-10 10:07:00
+359,ORD-2026-10359,10,CUST-1010,Enterprise Client 10,Austin,8,Stream Processing Hub,Analytics Suite,27968.82,2,PENDING,2026-04-10 13:22:00
+360,ORD-2026-10360,32,CUST-1032,Enterprise Client 32,Berlin,7,BI Analytics Studio,Analytics Suite,26126.95,3,CANCELLED,2026-04-28 13:01:00
+361,ORD-2026-10361,22,CUST-1022,Enterprise Client 22,Austin,1,DataPulse Suite v4,Cloud Software,26868.93,2,COMPLETED,2026-01-12 10:11:00
+362,ORD-2026-10362,45,CUST-1045,Enterprise Client 45,New York,5,Storage Array SAN-500,Enterprise Hardware,16874.85,2,COMPLETED,2026-07-30 10:17:00
+363,ORD-2026-10363,46,CUST-1046,Enterprise Client 46,Berlin,10,GPU Acceleration Node,AI Infrastructure,32092.86,2,COMPLETED,2026-02-23 11:51:00
+364,ORD-2026-10364,44,CUST-1044,Enterprise Client 44,Austin,8,Stream Processing Hub,Analytics Suite,53876.59,4,COMPLETED,2026-04-23 08:12:00
+365,ORD-2026-10365,37,CUST-1037,Enterprise Client 37,San Francisco,2,Cloud Sync Pro,Cloud Software,34480.45,3,COMPLETED,2026-07-13 12:30:00
+366,ORD-2026-10366,21,CUST-1021,Enterprise Client 21,Sydney,6,Edge Compute Gateway,Enterprise Hardware,10605.52,2,COMPLETED,2026-06-28 09:21:00
+367,ORD-2026-10367,28,CUST-1028,Enterprise Client 28,New York,10,GPU Acceleration Node,AI Infrastructure,43722.35,3,COMPLETED,2026-06-23 09:51:00
+368,ORD-2026-10368,32,CUST-1032,Enterprise Client 32,Berlin,8,Stream Processing Hub,Analytics Suite,12909.74,1,COMPLETED,2026-03-04 16:57:00
+369,ORD-2026-10369,37,CUST-1037,Enterprise Client 37,San Francisco,4,Quantum Blade Server X1,Enterprise Hardware,38223.81,5,CANCELLED,2026-05-23 13:38:00
+370,ORD-2026-10370,20,CUST-1020,Enterprise Client 20,Chicago,10,GPU Acceleration Node,AI Infrastructure,69819.59,5,COMPLETED,2026-06-02 14:26:00
+371,ORD-2026-10371,11,CUST-1011,Enterprise Client 11,New York,13,Zero Trust Shield,Cybersecurity,2179.0,1,COMPLETED,2026-01-10 18:12:00
+372,ORD-2026-10372,5,CUST-1005,Enterprise Client 5,Austin,5,Storage Array SAN-500,Enterprise Hardware,36251.87,4,COMPLETED,2026-01-15 09:59:00
+373,ORD-2026-10373,31,CUST-1031,Enterprise Client 31,Berlin,8,Stream Processing Hub,Analytics Suite,14541.7,1,PENDING,2026-02-12 09:52:00
+374,ORD-2026-10374,48,CUST-1048,Enterprise Client 48,Sydney,11,Model Training Pipeline,AI Infrastructure,16149.48,2,COMPLETED,2026-05-14 15:24:00
+375,ORD-2026-10375,22,CUST-1022,Enterprise Client 22,Austin,10,GPU Acceleration Node,AI Infrastructure,81165.69,5,COMPLETED,2026-05-31 17:07:00
+376,ORD-2026-10376,12,CUST-1012,Enterprise Client 12,Chicago,8,Stream Processing Hub,Analytics Suite,72857.47,5,COMPLETED,2026-05-16 18:21:00
+377,ORD-2026-10377,14,CUST-1014,Enterprise Client 14,Seattle,14,Security Audit Agent,Cybersecurity,4653.83,2,CANCELLED,2026-01-22 08:29:00
+378,ORD-2026-10378,41,CUST-1041,Enterprise Client 41,Seattle,1,DataPulse Suite v4,Cloud Software,29785.02,2,CANCELLED,2026-01-08 14:04:00
+379,ORD-2026-10379,26,CUST-1026,Enterprise Client 26,Tokyo,14,Security Audit Agent,Cybersecurity,7535.41,3,COMPLETED,2026-03-20 10:47:00
+380,ORD-2026-10380,42,CUST-1042,Enterprise Client 42,Austin,9,Predictive Engine AI,Analytics Suite,17244.99,3,PENDING,2026-05-20 12:50:00
+381,ORD-2026-10381,3,CUST-1003,Enterprise Client 3,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,31521.89,4,PENDING,2026-08-02 08:36:00
+382,ORD-2026-10382,36,CUST-1036,Enterprise Client 36,Toronto,8,Stream Processing Hub,Analytics Suite,66967.0,5,COMPLETED,2026-06-01 15:15:00
+383,ORD-2026-10383,32,CUST-1032,Enterprise Client 32,Berlin,15,Identity Vault Pro,Cybersecurity,21650.85,4,COMPLETED,2026-02-27 15:34:00
+384,ORD-2026-10384,42,CUST-1042,Enterprise Client 42,Austin,12,LLM Inference Engine,AI Infrastructure,49610.28,5,COMPLETED,2026-08-01 12:27:00
+385,ORD-2026-10385,20,CUST-1020,Enterprise Client 20,Chicago,11,Model Training Pipeline,AI Infrastructure,9070.4,1,PENDING,2026-04-24 11:04:00
+386,ORD-2026-10386,47,CUST-1047,Enterprise Client 47,Seattle,8,Stream Processing Hub,Analytics Suite,71661.37,5,PENDING,2026-01-14 17:17:00
+387,ORD-2026-10387,17,CUST-1017,Enterprise Client 17,San Francisco,9,Predictive Engine AI,Analytics Suite,11158.96,2,CANCELLED,2026-06-09 13:09:00
+388,ORD-2026-10388,29,CUST-1029,Enterprise Client 29,Toronto,7,BI Analytics Studio,Analytics Suite,27393.92,3,COMPLETED,2026-08-19 09:03:00
+389,ORD-2026-10389,1,CUST-1001,Enterprise Client 1,San Francisco,10,GPU Acceleration Node,AI Infrastructure,46788.66,3,COMPLETED,2026-04-07 14:01:00
+390,ORD-2026-10390,45,CUST-1045,Enterprise Client 45,New York,8,Stream Processing Hub,Analytics Suite,13032.2,1,COMPLETED,2026-07-26 13:22:00
+391,ORD-2026-10391,15,CUST-1015,Enterprise Client 15,Sydney,10,GPU Acceleration Node,AI Infrastructure,48050.44,3,PENDING,2026-06-17 08:28:00
+392,ORD-2026-10392,10,CUST-1010,Enterprise Client 10,Austin,4,Quantum Blade Server X1,Enterprise Hardware,16587.25,2,COMPLETED,2026-04-08 09:06:00
+393,ORD-2026-10393,36,CUST-1036,Enterprise Client 36,Toronto,14,Security Audit Agent,Cybersecurity,8759.31,4,PENDING,2026-05-17 14:59:00
+394,ORD-2026-10394,17,CUST-1017,Enterprise Client 17,San Francisco,15,Identity Vault Pro,Cybersecurity,12486.8,2,COMPLETED,2026-02-20 09:59:00
+395,ORD-2026-10395,2,CUST-1002,Enterprise Client 2,Seattle,10,GPU Acceleration Node,AI Infrastructure,27164.79,2,COMPLETED,2026-03-08 11:21:00
+396,ORD-2026-10396,17,CUST-1017,Enterprise Client 17,San Francisco,5,Storage Array SAN-500,Enterprise Hardware,19736.39,2,COMPLETED,2026-07-19 14:36:00
+397,ORD-2026-10397,19,CUST-1019,Enterprise Client 19,London,4,Quantum Blade Server X1,Enterprise Hardware,29404.88,4,COMPLETED,2026-07-18 18:24:00
+398,ORD-2026-10398,50,CUST-1050,Enterprise Client 50,Austin,12,LLM Inference Engine,AI Infrastructure,17155.53,2,CANCELLED,2026-02-02 11:12:00
+399,ORD-2026-10399,21,CUST-1021,Enterprise Client 21,Sydney,15,Identity Vault Pro,Cybersecurity,10787.4,2,CANCELLED,2026-03-29 15:51:00
+400,ORD-2026-10400,44,CUST-1044,Enterprise Client 44,Austin,5,Storage Array SAN-500,Enterprise Hardware,47616.51,5,PENDING,2026-08-17 12:03:00
+401,ORD-2026-10401,6,CUST-1006,Enterprise Client 6,Seattle,8,Stream Processing Hub,Analytics Suite,58238.84,4,COMPLETED,2026-01-01 14:36:00
+402,ORD-2026-10402,28,CUST-1028,Enterprise Client 28,New York,4,Quantum Blade Server X1,Enterprise Hardware,30771.6,4,COMPLETED,2026-06-07 10:48:00
+403,ORD-2026-10403,26,CUST-1026,Enterprise Client 26,Tokyo,6,Edge Compute Gateway,Enterprise Hardware,23689.6,4,COMPLETED,2026-03-10 09:37:00
+404,ORD-2026-10404,6,CUST-1006,Enterprise Client 6,Seattle,15,Identity Vault Pro,Cybersecurity,5539.59,1,COMPLETED,2026-02-20 18:24:00
+405,ORD-2026-10405,3,CUST-1003,Enterprise Client 3,Seattle,11,Model Training Pipeline,AI Infrastructure,9379.62,1,PENDING,2026-03-15 16:48:00
+406,ORD-2026-10406,18,CUST-1018,Enterprise Client 18,Tokyo,15,Identity Vault Pro,Cybersecurity,5534.59,1,PENDING,2026-01-25 13:57:00
+407,ORD-2026-10407,22,CUST-1022,Enterprise Client 22,Austin,4,Quantum Blade Server X1,Enterprise Hardware,29302.03,4,COMPLETED,2026-07-08 08:56:00
+408,ORD-2026-10408,16,CUST-1016,Enterprise Client 16,San Francisco,8,Stream Processing Hub,Analytics Suite,13894.61,1,CANCELLED,2026-02-14 14:37:00
+409,ORD-2026-10409,22,CUST-1022,Enterprise Client 22,Austin,12,LLM Inference Engine,AI Infrastructure,40977.14,4,CANCELLED,2026-08-13 18:08:00
+410,ORD-2026-10410,43,CUST-1043,Enterprise Client 43,Tokyo,9,Predictive Engine AI,Analytics Suite,20324.96,4,COMPLETED,2026-01-11 08:10:00
+411,ORD-2026-10411,47,CUST-1047,Enterprise Client 47,Seattle,11,Model Training Pipeline,AI Infrastructure,45612.39,5,CANCELLED,2026-06-23 08:32:00
+412,ORD-2026-10412,40,CUST-1040,Enterprise Client 40,London,1,DataPulse Suite v4,Cloud Software,39262.97,3,COMPLETED,2026-03-05 15:51:00
+413,ORD-2026-10413,11,CUST-1011,Enterprise Client 11,New York,12,LLM Inference Engine,AI Infrastructure,9551.93,1,CANCELLED,2026-02-27 18:01:00
+414,ORD-2026-10414,24,CUST-1024,Enterprise Client 24,Toronto,2,Cloud Sync Pro,Cloud Software,35993.38,3,PENDING,2026-07-21 16:30:00
+415,ORD-2026-10415,21,CUST-1021,Enterprise Client 21,Sydney,3,API Gateway Enterprise,Cloud Software,33557.93,4,PENDING,2026-08-12 08:57:00
+416,ORD-2026-10416,11,CUST-1011,Enterprise Client 11,New York,12,LLM Inference Engine,AI Infrastructure,47930.54,5,PENDING,2026-04-13 13:42:00
+417,ORD-2026-10417,30,CUST-1030,Enterprise Client 30,Sydney,11,Model Training Pipeline,AI Infrastructure,43299.29,5,CANCELLED,2026-05-18 09:48:00
+418,ORD-2026-10418,42,CUST-1042,Enterprise Client 42,Austin,7,BI Analytics Studio,Analytics Suite,10111.18,1,COMPLETED,2026-02-09 17:10:00
+419,ORD-2026-10419,13,CUST-1013,Enterprise Client 13,Sydney,10,GPU Acceleration Node,AI Infrastructure,75890.72,5,COMPLETED,2026-05-29 16:48:00
+420,ORD-2026-10420,15,CUST-1015,Enterprise Client 15,Sydney,2,Cloud Sync Pro,Cloud Software,43411.49,4,COMPLETED,2026-04-08 09:33:00
+421,ORD-2026-10421,32,CUST-1032,Enterprise Client 32,Berlin,2,Cloud Sync Pro,Cloud Software,11465.23,1,COMPLETED,2026-05-17 10:53:00
+422,ORD-2026-10422,48,CUST-1048,Enterprise Client 48,Sydney,10,GPU Acceleration Node,AI Infrastructure,54003.15,4,CANCELLED,2026-06-07 15:02:00
+423,ORD-2026-10423,16,CUST-1016,Enterprise Client 16,San Francisco,5,Storage Array SAN-500,Enterprise Hardware,25871.5,3,COMPLETED,2026-02-25 11:55:00
+424,ORD-2026-10424,41,CUST-1041,Enterprise Client 41,Seattle,11,Model Training Pipeline,AI Infrastructure,27417.8,3,COMPLETED,2026-01-15 10:25:00
+425,ORD-2026-10425,25,CUST-1025,Enterprise Client 25,Berlin,9,Predictive Engine AI,Analytics Suite,15255.7,3,PENDING,2026-04-29 11:44:00
+426,ORD-2026-10426,28,CUST-1028,Enterprise Client 28,New York,11,Model Training Pipeline,AI Infrastructure,23539.98,3,CANCELLED,2026-03-31 18:39:00
+427,ORD-2026-10427,18,CUST-1018,Enterprise Client 18,Tokyo,1,DataPulse Suite v4,Cloud Software,13992.44,1,COMPLETED,2026-01-30 18:43:00
+428,ORD-2026-10428,9,CUST-1009,Enterprise Client 9,Tokyo,3,API Gateway Enterprise,Cloud Software,9318.67,1,COMPLETED,2026-04-11 09:01:00
+429,ORD-2026-10429,18,CUST-1018,Enterprise Client 18,Tokyo,12,LLM Inference Engine,AI Infrastructure,48182.46,5,COMPLETED,2026-08-16 13:49:00
+430,ORD-2026-10430,35,CUST-1035,Enterprise Client 35,Berlin,10,GPU Acceleration Node,AI Infrastructure,59235.93,4,COMPLETED,2026-02-03 14:28:00
+431,ORD-2026-10431,42,CUST-1042,Enterprise Client 42,Austin,13,Zero Trust Shield,Cybersecurity,2361.08,1,COMPLETED,2026-02-04 11:52:00
+432,ORD-2026-10432,15,CUST-1015,Enterprise Client 15,Sydney,2,Cloud Sync Pro,Cloud Software,12003.9,1,CANCELLED,2026-02-11 08:45:00
+433,ORD-2026-10433,40,CUST-1040,Enterprise Client 40,London,3,API Gateway Enterprise,Cloud Software,9251.96,1,COMPLETED,2026-07-14 10:58:00
+434,ORD-2026-10434,45,CUST-1045,Enterprise Client 45,New York,9,Predictive Engine AI,Analytics Suite,10011.6,2,COMPLETED,2026-04-10 14:12:00
+435,ORD-2026-10435,4,CUST-1004,Enterprise Client 4,Toronto,6,Edge Compute Gateway,Enterprise Hardware,26134.47,5,COMPLETED,2026-03-01 13:02:00
+436,ORD-2026-10436,44,CUST-1044,Enterprise Client 44,Austin,4,Quantum Blade Server X1,Enterprise Hardware,32612.86,4,PENDING,2026-02-01 13:14:00
+437,ORD-2026-10437,18,CUST-1018,Enterprise Client 18,Tokyo,14,Security Audit Agent,Cybersecurity,4893.57,2,COMPLETED,2026-07-02 16:52:00
+438,ORD-2026-10438,12,CUST-1012,Enterprise Client 12,Chicago,2,Cloud Sync Pro,Cloud Software,25080.8,2,COMPLETED,2026-05-30 10:59:00
+439,ORD-2026-10439,2,CUST-1002,Enterprise Client 2,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,6931.18,1,PENDING,2026-01-22 12:13:00
+440,ORD-2026-10440,11,CUST-1011,Enterprise Client 11,New York,13,Zero Trust Shield,Cybersecurity,7730.14,3,PENDING,2026-05-27 13:44:00
+441,ORD-2026-10441,32,CUST-1032,Enterprise Client 32,Berlin,9,Predictive Engine AI,Analytics Suite,29458.99,5,COMPLETED,2026-05-28 10:19:00
+442,ORD-2026-10442,24,CUST-1024,Enterprise Client 24,Toronto,4,Quantum Blade Server X1,Enterprise Hardware,7663.55,1,CANCELLED,2026-06-30 12:09:00
+443,ORD-2026-10443,20,CUST-1020,Enterprise Client 20,Chicago,3,API Gateway Enterprise,Cloud Software,26025.58,3,COMPLETED,2026-03-19 09:10:00
+444,ORD-2026-10444,18,CUST-1018,Enterprise Client 18,Tokyo,2,Cloud Sync Pro,Cloud Software,22104.78,2,CANCELLED,2026-08-07 16:45:00
+445,ORD-2026-10445,41,CUST-1041,Enterprise Client 41,Seattle,12,LLM Inference Engine,AI Infrastructure,8870.32,1,PENDING,2026-03-05 11:17:00
+446,ORD-2026-10446,29,CUST-1029,Enterprise Client 29,Toronto,3,API Gateway Enterprise,Cloud Software,7970.01,1,COMPLETED,2026-05-22 14:13:00
+447,ORD-2026-10447,8,CUST-1008,Enterprise Client 8,Seattle,7,BI Analytics Studio,Analytics Suite,40061.19,4,PENDING,2026-06-03 13:56:00
+448,ORD-2026-10448,5,CUST-1005,Enterprise Client 5,Austin,6,Edge Compute Gateway,Enterprise Hardware,5071.62,1,COMPLETED,2026-03-30 17:46:00
+449,ORD-2026-10449,9,CUST-1009,Enterprise Client 9,Tokyo,3,API Gateway Enterprise,Cloud Software,34145.5,4,PENDING,2026-05-05 13:57:00
+450,ORD-2026-10450,41,CUST-1041,Enterprise Client 41,Seattle,14,Security Audit Agent,Cybersecurity,8730.73,4,COMPLETED,2026-02-24 16:37:00
+451,ORD-2026-10451,10,CUST-1010,Enterprise Client 10,Austin,1,DataPulse Suite v4,Cloud Software,54986.66,4,COMPLETED,2026-04-14 17:56:00
+452,ORD-2026-10452,16,CUST-1016,Enterprise Client 16,San Francisco,8,Stream Processing Hub,Analytics Suite,38573.95,3,COMPLETED,2026-04-17 11:59:00
+453,ORD-2026-10453,50,CUST-1050,Enterprise Client 50,Austin,13,Zero Trust Shield,Cybersecurity,12181.82,5,PENDING,2026-04-19 17:49:00
+454,ORD-2026-10454,8,CUST-1008,Enterprise Client 8,Seattle,10,GPU Acceleration Node,AI Infrastructure,78009.65,5,COMPLETED,2026-07-07 11:07:00
+455,ORD-2026-10455,48,CUST-1048,Enterprise Client 48,Sydney,15,Identity Vault Pro,Cybersecurity,31544.06,5,COMPLETED,2026-04-02 12:01:00
+456,ORD-2026-10456,39,CUST-1039,Enterprise Client 39,Seattle,8,Stream Processing Hub,Analytics Suite,13331.33,1,PENDING,2026-06-27 11:25:00
+457,ORD-2026-10457,31,CUST-1031,Enterprise Client 31,Berlin,13,Zero Trust Shield,Cybersecurity,2251.49,1,PENDING,2026-02-04 10:26:00
+458,ORD-2026-10458,19,CUST-1019,Enterprise Client 19,London,7,BI Analytics Studio,Analytics Suite,18547.04,2,PENDING,2026-01-21 18:47:00
+459,ORD-2026-10459,41,CUST-1041,Enterprise Client 41,Seattle,1,DataPulse Suite v4,Cloud Software,64986.1,5,COMPLETED,2026-06-22 15:28:00
+460,ORD-2026-10460,16,CUST-1016,Enterprise Client 16,San Francisco,3,API Gateway Enterprise,Cloud Software,35228.81,4,COMPLETED,2026-05-31 17:26:00
+461,ORD-2026-10461,24,CUST-1024,Enterprise Client 24,Toronto,10,GPU Acceleration Node,AI Infrastructure,48149.41,3,COMPLETED,2026-04-25 15:49:00
+462,ORD-2026-10462,10,CUST-1010,Enterprise Client 10,Austin,10,GPU Acceleration Node,AI Infrastructure,48953.95,3,COMPLETED,2026-07-18 09:04:00
+463,ORD-2026-10463,33,CUST-1033,Enterprise Client 33,Seattle,10,GPU Acceleration Node,AI Infrastructure,46515.94,3,PENDING,2026-07-21 18:07:00
+464,ORD-2026-10464,28,CUST-1028,Enterprise Client 28,New York,7,BI Analytics Studio,Analytics Suite,10329.81,1,COMPLETED,2026-02-22 18:15:00
+465,ORD-2026-10465,2,CUST-1002,Enterprise Client 2,Seattle,13,Zero Trust Shield,Cybersecurity,4849.74,2,COMPLETED,2026-03-03 18:31:00
+466,ORD-2026-10466,5,CUST-1005,Enterprise Client 5,Austin,2,Cloud Sync Pro,Cloud Software,32047.83,3,COMPLETED,2026-06-10 12:42:00
+467,ORD-2026-10467,27,CUST-1027,Enterprise Client 27,Toronto,5,Storage Array SAN-500,Enterprise Hardware,8614.97,1,COMPLETED,2026-03-21 11:23:00
+468,ORD-2026-10468,28,CUST-1028,Enterprise Client 28,New York,8,Stream Processing Hub,Analytics Suite,57270.14,4,PENDING,2026-06-14 15:03:00
+469,ORD-2026-10469,47,CUST-1047,Enterprise Client 47,Seattle,2,Cloud Sync Pro,Cloud Software,42149.99,4,COMPLETED,2026-03-02 12:56:00
+470,ORD-2026-10470,11,CUST-1011,Enterprise Client 11,New York,3,API Gateway Enterprise,Cloud Software,46087.78,5,COMPLETED,2026-05-05 14:47:00
+471,ORD-2026-10471,2,CUST-1002,Enterprise Client 2,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,29237.17,4,COMPLETED,2026-01-20 18:48:00
+472,ORD-2026-10472,11,CUST-1011,Enterprise Client 11,New York,4,Quantum Blade Server X1,Enterprise Hardware,8201.12,1,COMPLETED,2026-03-23 09:43:00
+473,ORD-2026-10473,10,CUST-1010,Enterprise Client 10,Austin,15,Identity Vault Pro,Cybersecurity,5615.55,1,PENDING,2026-02-26 10:35:00
+474,ORD-2026-10474,7,CUST-1007,Enterprise Client 7,San Francisco,14,Security Audit Agent,Cybersecurity,5127.64,2,COMPLETED,2026-04-12 15:37:00
+475,ORD-2026-10475,46,CUST-1046,Enterprise Client 46,Berlin,2,Cloud Sync Pro,Cloud Software,24405.9,2,PENDING,2026-01-28 12:18:00
+476,ORD-2026-10476,45,CUST-1045,Enterprise Client 45,New York,13,Zero Trust Shield,Cybersecurity,11761.47,5,COMPLETED,2026-07-22 17:30:00
+477,ORD-2026-10477,2,CUST-1002,Enterprise Client 2,Seattle,13,Zero Trust Shield,Cybersecurity,9063.85,4,COMPLETED,2026-03-26 12:39:00
+478,ORD-2026-10478,18,CUST-1018,Enterprise Client 18,Tokyo,15,Identity Vault Pro,Cybersecurity,18942.76,3,PENDING,2026-01-10 14:59:00
+479,ORD-2026-10479,33,CUST-1033,Enterprise Client 33,Seattle,3,API Gateway Enterprise,Cloud Software,17011.92,2,COMPLETED,2026-03-22 17:02:00
+480,ORD-2026-10480,8,CUST-1008,Enterprise Client 8,Seattle,10,GPU Acceleration Node,AI Infrastructure,76802.17,5,COMPLETED,2026-03-09 11:25:00
+481,ORD-2026-10481,41,CUST-1041,Enterprise Client 41,Seattle,15,Identity Vault Pro,Cybersecurity,27117.56,5,CANCELLED,2026-04-05 15:27:00
+482,ORD-2026-10482,10,CUST-1010,Enterprise Client 10,Austin,12,LLM Inference Engine,AI Infrastructure,9971.07,1,COMPLETED,2026-04-06 09:08:00
+483,ORD-2026-10483,49,CUST-1049,Enterprise Client 49,Seattle,3,API Gateway Enterprise,Cloud Software,28013.64,3,COMPLETED,2026-06-18 17:32:00
+484,ORD-2026-10484,12,CUST-1012,Enterprise Client 12,Chicago,1,DataPulse Suite v4,Cloud Software,27027.05,2,COMPLETED,2026-05-03 08:51:00
+485,ORD-2026-10485,5,CUST-1005,Enterprise Client 5,Austin,10,GPU Acceleration Node,AI Infrastructure,54253.25,4,COMPLETED,2026-05-19 17:30:00
+486,ORD-2026-10486,43,CUST-1043,Enterprise Client 43,Tokyo,14,Security Audit Agent,Cybersecurity,12830.42,5,PENDING,2026-03-03 14:41:00
+487,ORD-2026-10487,27,CUST-1027,Enterprise Client 27,Toronto,8,Stream Processing Hub,Analytics Suite,25504.65,2,COMPLETED,2026-06-22 10:59:00
+488,ORD-2026-10488,13,CUST-1013,Enterprise Client 13,Sydney,10,GPU Acceleration Node,AI Infrastructure,31844.81,2,COMPLETED,2026-02-10 08:39:00
+489,ORD-2026-10489,38,CUST-1038,Enterprise Client 38,Berlin,9,Predictive Engine AI,Analytics Suite,26560.09,5,COMPLETED,2026-05-31 14:46:00
+490,ORD-2026-10490,23,CUST-1023,Enterprise Client 23,Seattle,7,BI Analytics Studio,Analytics Suite,48758.71,5,CANCELLED,2026-06-02 08:03:00
+491,ORD-2026-10491,16,CUST-1016,Enterprise Client 16,San Francisco,5,Storage Array SAN-500,Enterprise Hardware,36373.56,4,COMPLETED,2026-02-01 14:49:00
+492,ORD-2026-10492,24,CUST-1024,Enterprise Client 24,Toronto,9,Predictive Engine AI,Analytics Suite,10129.15,2,PENDING,2026-05-29 12:38:00
+493,ORD-2026-10493,33,CUST-1033,Enterprise Client 33,Seattle,11,Model Training Pipeline,AI Infrastructure,33325.44,4,COMPLETED,2026-08-10 09:07:00
+494,ORD-2026-10494,3,CUST-1003,Enterprise Client 3,Seattle,11,Model Training Pipeline,AI Infrastructure,39885.46,5,COMPLETED,2026-08-07 18:55:00
+495,ORD-2026-10495,1,CUST-1001,Enterprise Client 1,San Francisco,6,Edge Compute Gateway,Enterprise Hardware,24767.25,5,COMPLETED,2026-02-06 17:06:00
+496,ORD-2026-10496,27,CUST-1027,Enterprise Client 27,Toronto,11,Model Training Pipeline,AI Infrastructure,18807.94,2,COMPLETED,2026-01-08 14:38:00
+497,ORD-2026-10497,32,CUST-1032,Enterprise Client 32,Berlin,1,DataPulse Suite v4,Cloud Software,66163.55,5,COMPLETED,2026-05-13 16:41:00
+498,ORD-2026-10498,45,CUST-1045,Enterprise Client 45,New York,4,Quantum Blade Server X1,Enterprise Hardware,23613.0,3,COMPLETED,2026-05-30 15:05:00
+499,ORD-2026-10499,44,CUST-1044,Enterprise Client 44,Austin,7,BI Analytics Studio,Analytics Suite,31696.22,3,PENDING,2026-06-30 16:33:00
+500,ORD-2026-10500,40,CUST-1040,Enterprise Client 40,London,1,DataPulse Suite v4,Cloud Software,53895.33,4,COMPLETED,2026-08-09 12:42:00
+501,ORD-2026-10501,8,CUST-1008,Enterprise Client 8,Seattle,5,Storage Array SAN-500,Enterprise Hardware,44592.57,5,COMPLETED,2026-04-23 10:55:00
+502,ORD-2026-10502,29,CUST-1029,Enterprise Client 29,Toronto,4,Quantum Blade Server X1,Enterprise Hardware,15910.27,2,PENDING,2026-04-22 12:10:00
+503,ORD-2026-10503,42,CUST-1042,Enterprise Client 42,Austin,14,Security Audit Agent,Cybersecurity,7250.47,3,CANCELLED,2026-01-26 11:53:00
+504,ORD-2026-10504,12,CUST-1012,Enterprise Client 12,Chicago,9,Predictive Engine AI,Analytics Suite,10584.68,2,COMPLETED,2026-01-21 16:13:00
+505,ORD-2026-10505,18,CUST-1018,Enterprise Client 18,Tokyo,13,Zero Trust Shield,Cybersecurity,9505.99,4,COMPLETED,2026-06-24 12:18:00
+506,ORD-2026-10506,25,CUST-1025,Enterprise Client 25,Berlin,7,BI Analytics Studio,Analytics Suite,19697.54,2,COMPLETED,2026-05-05 09:54:00
+507,ORD-2026-10507,21,CUST-1021,Enterprise Client 21,Sydney,7,BI Analytics Studio,Analytics Suite,36032.66,4,COMPLETED,2026-05-04 16:03:00
+508,ORD-2026-10508,1,CUST-1001,Enterprise Client 1,San Francisco,3,API Gateway Enterprise,Cloud Software,16854.03,2,PENDING,2026-03-22 16:56:00
+509,ORD-2026-10509,16,CUST-1016,Enterprise Client 16,San Francisco,9,Predictive Engine AI,Analytics Suite,4942.74,1,CANCELLED,2026-02-04 17:34:00
+510,ORD-2026-10510,44,CUST-1044,Enterprise Client 44,Austin,4,Quantum Blade Server X1,Enterprise Hardware,16427.01,2,CANCELLED,2026-08-02 16:03:00
+511,ORD-2026-10511,22,CUST-1022,Enterprise Client 22,Austin,1,DataPulse Suite v4,Cloud Software,65050.94,5,COMPLETED,2026-05-10 16:50:00
+512,ORD-2026-10512,36,CUST-1036,Enterprise Client 36,Toronto,1,DataPulse Suite v4,Cloud Software,13255.07,1,CANCELLED,2026-03-05 10:55:00
+513,ORD-2026-10513,13,CUST-1013,Enterprise Client 13,Sydney,11,Model Training Pipeline,AI Infrastructure,41053.02,5,COMPLETED,2026-02-08 17:32:00
+514,ORD-2026-10514,19,CUST-1019,Enterprise Client 19,London,10,GPU Acceleration Node,AI Infrastructure,79569.38,5,COMPLETED,2026-08-18 08:19:00
+515,ORD-2026-10515,27,CUST-1027,Enterprise Client 27,Toronto,9,Predictive Engine AI,Analytics Suite,23217.26,4,PENDING,2026-05-12 08:17:00
+516,ORD-2026-10516,38,CUST-1038,Enterprise Client 38,Berlin,7,BI Analytics Studio,Analytics Suite,30842.35,3,COMPLETED,2026-06-03 12:55:00
+517,ORD-2026-10517,13,CUST-1013,Enterprise Client 13,Sydney,12,LLM Inference Engine,AI Infrastructure,20718.19,2,COMPLETED,2026-04-27 11:30:00
+518,ORD-2026-10518,14,CUST-1014,Enterprise Client 14,Seattle,8,Stream Processing Hub,Analytics Suite,68701.33,5,PENDING,2026-01-05 14:11:00
+519,ORD-2026-10519,44,CUST-1044,Enterprise Client 44,Austin,8,Stream Processing Hub,Analytics Suite,39659.63,3,COMPLETED,2026-03-15 13:44:00
+520,ORD-2026-10520,46,CUST-1046,Enterprise Client 46,Berlin,9,Predictive Engine AI,Analytics Suite,5620.66,1,COMPLETED,2026-01-01 16:21:00
+521,ORD-2026-10521,1,CUST-1001,Enterprise Client 1,San Francisco,5,Storage Array SAN-500,Enterprise Hardware,19407.84,2,PENDING,2026-01-21 13:55:00
+522,ORD-2026-10522,43,CUST-1043,Enterprise Client 43,Tokyo,7,BI Analytics Studio,Analytics Suite,20561.36,2,COMPLETED,2026-01-30 15:03:00
+523,ORD-2026-10523,37,CUST-1037,Enterprise Client 37,San Francisco,12,LLM Inference Engine,AI Infrastructure,48717.92,5,COMPLETED,2026-04-09 14:53:00
+524,ORD-2026-10524,30,CUST-1030,Enterprise Client 30,Sydney,5,Storage Array SAN-500,Enterprise Hardware,41466.91,5,COMPLETED,2026-03-23 16:09:00
+525,ORD-2026-10525,23,CUST-1023,Enterprise Client 23,Seattle,9,Predictive Engine AI,Analytics Suite,15384.44,3,COMPLETED,2026-04-19 08:40:00
+526,ORD-2026-10526,8,CUST-1008,Enterprise Client 8,Seattle,8,Stream Processing Hub,Analytics Suite,68626.49,5,COMPLETED,2026-03-16 08:57:00
+527,ORD-2026-10527,29,CUST-1029,Enterprise Client 29,Toronto,3,API Gateway Enterprise,Cloud Software,8321.44,1,COMPLETED,2026-03-27 13:40:00
+528,ORD-2026-10528,44,CUST-1044,Enterprise Client 44,Austin,7,BI Analytics Studio,Analytics Suite,18433.31,2,COMPLETED,2026-06-21 18:06:00
+529,ORD-2026-10529,34,CUST-1034,Enterprise Client 34,Berlin,1,DataPulse Suite v4,Cloud Software,45150.61,3,CANCELLED,2026-03-04 16:58:00
+530,ORD-2026-10530,1,CUST-1001,Enterprise Client 1,San Francisco,7,BI Analytics Studio,Analytics Suite,49744.39,5,PENDING,2026-06-22 10:32:00
+531,ORD-2026-10531,25,CUST-1025,Enterprise Client 25,Berlin,8,Stream Processing Hub,Analytics Suite,52931.15,4,COMPLETED,2026-01-25 18:37:00
+532,ORD-2026-10532,50,CUST-1050,Enterprise Client 50,Austin,8,Stream Processing Hub,Analytics Suite,12671.68,1,COMPLETED,2026-02-04 13:42:00
+533,ORD-2026-10533,31,CUST-1031,Enterprise Client 31,Berlin,6,Edge Compute Gateway,Enterprise Hardware,15572.0,3,PENDING,2026-07-18 11:28:00
+534,ORD-2026-10534,24,CUST-1024,Enterprise Client 24,Toronto,8,Stream Processing Hub,Analytics Suite,27282.85,2,COMPLETED,2026-05-01 15:49:00
+535,ORD-2026-10535,34,CUST-1034,Enterprise Client 34,Berlin,1,DataPulse Suite v4,Cloud Software,45939.08,3,PENDING,2026-05-19 08:10:00
+536,ORD-2026-10536,19,CUST-1019,Enterprise Client 19,London,9,Predictive Engine AI,Analytics Suite,23590.17,4,COMPLETED,2026-07-20 15:21:00
+537,ORD-2026-10537,34,CUST-1034,Enterprise Client 34,Berlin,14,Security Audit Agent,Cybersecurity,2522.97,1,COMPLETED,2026-07-29 18:50:00
+538,ORD-2026-10538,17,CUST-1017,Enterprise Client 17,San Francisco,10,GPU Acceleration Node,AI Infrastructure,47337.87,3,COMPLETED,2026-06-12 13:03:00
+539,ORD-2026-10539,13,CUST-1013,Enterprise Client 13,Sydney,7,BI Analytics Studio,Analytics Suite,50865.48,5,COMPLETED,2026-03-20 08:24:00
+540,ORD-2026-10540,40,CUST-1040,Enterprise Client 40,London,10,GPU Acceleration Node,AI Infrastructure,27605.58,2,COMPLETED,2026-01-06 13:04:00
+541,ORD-2026-10541,14,CUST-1014,Enterprise Client 14,Seattle,9,Predictive Engine AI,Analytics Suite,17249.22,3,COMPLETED,2026-02-13 13:19:00
+542,ORD-2026-10542,8,CUST-1008,Enterprise Client 8,Seattle,12,LLM Inference Engine,AI Infrastructure,47799.16,5,COMPLETED,2026-07-18 08:32:00
+543,ORD-2026-10543,31,CUST-1031,Enterprise Client 31,Berlin,3,API Gateway Enterprise,Cloud Software,9526.09,1,COMPLETED,2026-08-19 14:05:00
+544,ORD-2026-10544,49,CUST-1049,Enterprise Client 49,Seattle,10,GPU Acceleration Node,AI Infrastructure,64921.03,4,COMPLETED,2026-07-03 13:33:00
+545,ORD-2026-10545,35,CUST-1035,Enterprise Client 35,Berlin,13,Zero Trust Shield,Cybersecurity,7368.86,3,PENDING,2026-04-26 11:59:00
+546,ORD-2026-10546,37,CUST-1037,Enterprise Client 37,San Francisco,6,Edge Compute Gateway,Enterprise Hardware,5266.69,1,CANCELLED,2026-07-27 15:20:00
+547,ORD-2026-10547,31,CUST-1031,Enterprise Client 31,Berlin,10,GPU Acceleration Node,AI Infrastructure,29963.22,2,COMPLETED,2026-05-24 18:46:00
+548,ORD-2026-10548,17,CUST-1017,Enterprise Client 17,San Francisco,4,Quantum Blade Server X1,Enterprise Hardware,28956.95,4,COMPLETED,2026-05-02 11:16:00
+549,ORD-2026-10549,3,CUST-1003,Enterprise Client 3,Seattle,12,LLM Inference Engine,AI Infrastructure,46462.57,5,CANCELLED,2026-01-04 13:33:00
+550,ORD-2026-10550,15,CUST-1015,Enterprise Client 15,Sydney,12,LLM Inference Engine,AI Infrastructure,18824.93,2,COMPLETED,2026-06-10 18:14:00
+551,ORD-2026-10551,34,CUST-1034,Enterprise Client 34,Berlin,3,API Gateway Enterprise,Cloud Software,8178.13,1,CANCELLED,2026-02-10 11:04:00
+552,ORD-2026-10552,19,CUST-1019,Enterprise Client 19,London,1,DataPulse Suite v4,Cloud Software,71752.54,5,COMPLETED,2026-06-11 12:28:00
+553,ORD-2026-10553,6,CUST-1006,Enterprise Client 6,Seattle,5,Storage Array SAN-500,Enterprise Hardware,37288.51,4,COMPLETED,2026-03-23 17:17:00
+554,ORD-2026-10554,13,CUST-1013,Enterprise Client 13,Sydney,13,Zero Trust Shield,Cybersecurity,12523.56,5,COMPLETED,2026-04-02 09:57:00
+555,ORD-2026-10555,28,CUST-1028,Enterprise Client 28,New York,10,GPU Acceleration Node,AI Infrastructure,43771.42,3,COMPLETED,2026-04-17 14:08:00
+556,ORD-2026-10556,32,CUST-1032,Enterprise Client 32,Berlin,2,Cloud Sync Pro,Cloud Software,34438.76,3,PENDING,2026-01-31 08:57:00
+557,ORD-2026-10557,17,CUST-1017,Enterprise Client 17,San Francisco,3,API Gateway Enterprise,Cloud Software,19050.14,2,COMPLETED,2026-06-21 11:29:00
+558,ORD-2026-10558,25,CUST-1025,Enterprise Client 25,Berlin,6,Edge Compute Gateway,Enterprise Hardware,11840.72,2,CANCELLED,2026-08-01 13:35:00
+559,ORD-2026-10559,7,CUST-1007,Enterprise Client 7,San Francisco,4,Quantum Blade Server X1,Enterprise Hardware,14476.92,2,COMPLETED,2026-02-17 13:57:00
+560,ORD-2026-10560,47,CUST-1047,Enterprise Client 47,Seattle,2,Cloud Sync Pro,Cloud Software,25082.73,2,COMPLETED,2026-05-05 11:03:00
+561,ORD-2026-10561,33,CUST-1033,Enterprise Client 33,Seattle,9,Predictive Engine AI,Analytics Suite,24751.55,5,CANCELLED,2026-01-11 08:31:00
+562,ORD-2026-10562,4,CUST-1004,Enterprise Client 4,Toronto,10,GPU Acceleration Node,AI Infrastructure,42442.39,3,CANCELLED,2026-01-25 17:29:00
+563,ORD-2026-10563,8,CUST-1008,Enterprise Client 8,Seattle,8,Stream Processing Hub,Analytics Suite,73760.5,5,COMPLETED,2026-08-16 17:10:00
+564,ORD-2026-10564,18,CUST-1018,Enterprise Client 18,Tokyo,3,API Gateway Enterprise,Cloud Software,46703.2,5,COMPLETED,2026-01-14 14:43:00
+565,ORD-2026-10565,38,CUST-1038,Enterprise Client 38,Berlin,13,Zero Trust Shield,Cybersecurity,4677.85,2,PENDING,2026-02-02 08:25:00
+566,ORD-2026-10566,21,CUST-1021,Enterprise Client 21,Sydney,7,BI Analytics Studio,Analytics Suite,9983.95,1,CANCELLED,2026-04-20 17:43:00
+567,ORD-2026-10567,37,CUST-1037,Enterprise Client 37,San Francisco,11,Model Training Pipeline,AI Infrastructure,9188.48,1,CANCELLED,2026-02-21 14:22:00
+568,ORD-2026-10568,13,CUST-1013,Enterprise Client 13,Sydney,1,DataPulse Suite v4,Cloud Software,13495.38,1,COMPLETED,2026-06-23 12:56:00
+569,ORD-2026-10569,31,CUST-1031,Enterprise Client 31,Berlin,2,Cloud Sync Pro,Cloud Software,12631.18,1,COMPLETED,2026-04-29 13:50:00
+570,ORD-2026-10570,15,CUST-1015,Enterprise Client 15,Sydney,6,Edge Compute Gateway,Enterprise Hardware,21417.04,4,PENDING,2026-02-07 08:18:00
+571,ORD-2026-10571,40,CUST-1040,Enterprise Client 40,London,7,BI Analytics Studio,Analytics Suite,19878.24,2,CANCELLED,2026-01-30 12:38:00
+572,ORD-2026-10572,38,CUST-1038,Enterprise Client 38,Berlin,1,DataPulse Suite v4,Cloud Software,13226.69,1,COMPLETED,2026-04-03 17:41:00
+573,ORD-2026-10573,42,CUST-1042,Enterprise Client 42,Austin,9,Predictive Engine AI,Analytics Suite,20544.46,4,COMPLETED,2026-08-16 09:55:00
+574,ORD-2026-10574,39,CUST-1039,Enterprise Client 39,Seattle,12,LLM Inference Engine,AI Infrastructure,43160.59,5,COMPLETED,2026-01-25 09:50:00
+575,ORD-2026-10575,36,CUST-1036,Enterprise Client 36,Toronto,11,Model Training Pipeline,AI Infrastructure,28161.8,3,COMPLETED,2026-05-02 08:55:00
+576,ORD-2026-10576,50,CUST-1050,Enterprise Client 50,Austin,3,API Gateway Enterprise,Cloud Software,8853.46,1,CANCELLED,2026-02-14 10:54:00
+577,ORD-2026-10577,4,CUST-1004,Enterprise Client 4,Toronto,7,BI Analytics Studio,Analytics Suite,20466.08,2,PENDING,2026-03-01 08:58:00
+578,ORD-2026-10578,19,CUST-1019,Enterprise Client 19,London,1,DataPulse Suite v4,Cloud Software,55909.02,4,COMPLETED,2026-04-08 13:35:00
+579,ORD-2026-10579,36,CUST-1036,Enterprise Client 36,Toronto,13,Zero Trust Shield,Cybersecurity,9827.13,4,COMPLETED,2026-06-20 17:42:00
+580,ORD-2026-10580,40,CUST-1040,Enterprise Client 40,London,7,BI Analytics Studio,Analytics Suite,20833.11,2,CANCELLED,2026-01-05 08:40:00
+581,ORD-2026-10581,42,CUST-1042,Enterprise Client 42,Austin,11,Model Training Pipeline,AI Infrastructure,36543.79,4,CANCELLED,2026-04-29 14:16:00
+582,ORD-2026-10582,45,CUST-1045,Enterprise Client 45,New York,6,Edge Compute Gateway,Enterprise Hardware,11633.35,2,COMPLETED,2026-07-26 16:32:00
+583,ORD-2026-10583,49,CUST-1049,Enterprise Client 49,Seattle,2,Cloud Sync Pro,Cloud Software,37536.5,3,COMPLETED,2026-06-29 18:18:00
+584,ORD-2026-10584,4,CUST-1004,Enterprise Client 4,Toronto,7,BI Analytics Studio,Analytics Suite,28573.62,3,COMPLETED,2026-08-15 12:59:00
+585,ORD-2026-10585,40,CUST-1040,Enterprise Client 40,London,13,Zero Trust Shield,Cybersecurity,4294.57,2,COMPLETED,2026-03-02 15:13:00
+586,ORD-2026-10586,22,CUST-1022,Enterprise Client 22,Austin,12,LLM Inference Engine,AI Infrastructure,48349.64,5,COMPLETED,2026-03-31 12:25:00
+587,ORD-2026-10587,17,CUST-1017,Enterprise Client 17,San Francisco,3,API Gateway Enterprise,Cloud Software,9418.69,1,COMPLETED,2026-03-19 08:36:00
+588,ORD-2026-10588,42,CUST-1042,Enterprise Client 42,Austin,9,Predictive Engine AI,Analytics Suite,28975.79,5,PENDING,2026-04-07 17:29:00
+589,ORD-2026-10589,50,CUST-1050,Enterprise Client 50,Austin,14,Security Audit Agent,Cybersecurity,12888.68,5,COMPLETED,2026-04-25 13:58:00
+590,ORD-2026-10590,45,CUST-1045,Enterprise Client 45,New York,5,Storage Array SAN-500,Enterprise Hardware,35602.45,4,CANCELLED,2026-05-27 11:07:00
+591,ORD-2026-10591,49,CUST-1049,Enterprise Client 49,Seattle,4,Quantum Blade Server X1,Enterprise Hardware,15321.38,2,COMPLETED,2026-08-01 16:33:00
+592,ORD-2026-10592,24,CUST-1024,Enterprise Client 24,Toronto,7,BI Analytics Studio,Analytics Suite,9540.04,1,COMPLETED,2026-07-10 14:37:00
+593,ORD-2026-10593,7,CUST-1007,Enterprise Client 7,San Francisco,14,Security Audit Agent,Cybersecurity,2548.06,1,COMPLETED,2026-06-10 08:00:00
+594,ORD-2026-10594,10,CUST-1010,Enterprise Client 10,Austin,3,API Gateway Enterprise,Cloud Software,8617.32,1,COMPLETED,2026-06-14 11:41:00
+595,ORD-2026-10595,11,CUST-1011,Enterprise Client 11,New York,10,GPU Acceleration Node,AI Infrastructure,60511.17,4,PENDING,2026-03-31 09:43:00
+596,ORD-2026-10596,46,CUST-1046,Enterprise Client 46,Berlin,7,BI Analytics Studio,Analytics Suite,9609.07,1,COMPLETED,2026-02-15 15:03:00
+597,ORD-2026-10597,42,CUST-1042,Enterprise Client 42,Austin,5,Storage Array SAN-500,Enterprise Hardware,25568.19,3,COMPLETED,2026-01-26 13:38:00
+598,ORD-2026-10598,30,CUST-1030,Enterprise Client 30,Sydney,15,Identity Vault Pro,Cybersecurity,19222.87,3,COMPLETED,2026-05-27 17:44:00
+599,ORD-2026-10599,20,CUST-1020,Enterprise Client 20,Chicago,13,Zero Trust Shield,Cybersecurity,2532.98,1,COMPLETED,2026-06-16 14:38:00
+600,ORD-2026-10600,28,CUST-1028,Enterprise Client 28,New York,3,API Gateway Enterprise,Cloud Software,31837.56,4,COMPLETED,2026-06-01 16:03:00

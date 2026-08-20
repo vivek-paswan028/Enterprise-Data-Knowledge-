@@ -1,0 +1,51 @@
+customer_key,customer_id,name,email,city
+1,CUST-1001,Enterprise Client 1,contact@client1.com,San Francisco
+2,CUST-1002,Enterprise Client 2,contact@client2.com,Seattle
+3,CUST-1003,Enterprise Client 3,contact@client3.com,Seattle
+4,CUST-1004,Enterprise Client 4,contact@client4.com,Toronto
+5,CUST-1005,Enterprise Client 5,contact@client5.com,Austin
+6,CUST-1006,Enterprise Client 6,contact@client6.com,Seattle
+7,CUST-1007,Enterprise Client 7,contact@client7.com,San Francisco
+8,CUST-1008,Enterprise Client 8,contact@client8.com,Seattle
+9,CUST-1009,Enterprise Client 9,contact@client9.com,Tokyo
+10,CUST-1010,Enterprise Client 10,contact@client10.com,Austin
+11,CUST-1011,Enterprise Client 11,contact@client11.com,New York
+12,CUST-1012,Enterprise Client 12,contact@client12.com,Chicago
+13,CUST-1013,Enterprise Client 13,contact@client13.com,Sydney
+14,CUST-1014,Enterprise Client 14,contact@client14.com,Seattle
+15,CUST-1015,Enterprise Client 15,contact@client15.com,Sydney
+16,CUST-1016,Enterprise Client 16,contact@client16.com,San Francisco
+17,CUST-1017,Enterprise Client 17,contact@client17.com,San Francisco
+18,CUST-1018,Enterprise Client 18,contact@client18.com,Tokyo
+19,CUST-1019,Enterprise Client 19,contact@client19.com,London
+20,CUST-1020,Enterprise Client 20,contact@client20.com,Chicago
+21,CUST-1021,Enterprise Client 21,contact@client21.com,Sydney
+22,CUST-1022,Enterprise Client 22,contact@client22.com,Austin
+23,CUST-1023,Enterprise Client 23,contact@client23.com,Seattle
+24,CUST-1024,Enterprise Client 24,contact@client24.com,Toronto
+25,CUST-1025,Enterprise Client 25,contact@client25.com,Berlin
+26,CUST-1026,Enterprise Client 26,contact@client26.com,Tokyo
+27,CUST-1027,Enterprise Client 27,contact@client27.com,Toronto
+28,CUST-1028,Enterprise Client 28,contact@client28.com,New York
+29,CUST-1029,Enterprise Client 29,contact@client29.com,Toronto
+30,CUST-1030,Enterprise Client 30,contact@client30.com,Sydney
+31,CUST-1031,Enterprise Client 31,contact@client31.com,Berlin
+32,CUST-1032,Enterprise Client 32,contact@client32.com,Berlin
+33,CUST-1033,Enterprise Client 33,contact@client33.com,Seattle
+34,CUST-1034,Enterprise Client 34,contact@client34.com,Berlin
+35,CUST-1035,Enterprise Client 35,contact@client35.com,Berlin
+36,CUST-1036,Enterprise Client 36,contact@client36.com,Toronto
+37,CUST-1037,Enterprise Client 37,contact@client37.com,San Francisco
+38,CUST-1038,Enterprise Client 38,contact@client38.com,Berlin
+39,CUST-1039,Enterprise Client 39,contact@client39.com,Seattle
+40,CUST-1040,Enterprise Client 40,contact@client40.com,London
+41,CUST-1041,Enterprise Client 41,contact@client41.com,Seattle
+42,CUST-1042,Enterprise Client 42,contact@client42.com,Austin
+43,CUST-1043,Enterprise Client 43,contact@client43.com,Tokyo
+44,CUST-1044,Enterprise Client 44,contact@client44.com,Austin
+45,CUST-1045,Enterprise Client 45,contact@client45.com,New York
+46,CUST-1046,Enterprise Client 46,contact@client46.com,Berlin
+47,CUST-1047,Enterprise Client 47,contact@client47.com,Seattle
+48,CUST-1048,Enterprise Client 48,contact@client48.com,Sydney
+49,CUST-1049,Enterprise Client 49,contact@client49.com,Seattle
+50,CUST-1050,Enterprise Client 50,contact@client50.com,Austin

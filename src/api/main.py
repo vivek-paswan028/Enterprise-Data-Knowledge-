@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.config.settings import settings
 from src.utils.logger import export_logger as logger
-from src.api.routers import auth, ingestion, pipeline, llm
+from src.api.routers import auth, ingestion, pipeline, llm, powerbi
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -26,6 +26,14 @@ app.include_router(auth.router)
 app.include_router(ingestion.router)
 app.include_router(pipeline.router)
 app.include_router(llm.router)
+app.include_router(powerbi.router)
+
+
+@app.get("/", include_in_schema=False)
+async def root_redirect():
+    """Redirect root path to Power BI Executive Dashboard."""
+    return await powerbi.get_powerbi_dashboard()
+
 
 
 @app.get("/health", tags=["System Health"])
