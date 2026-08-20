@@ -1,0 +1,107 @@
+version: "3.8"
+
+services:
+  postgres_warehouse:
+    image: postgres:16-alpine
+    container_name: datapulse_postgres_dw
+    environment:
+      POSTGRES_USER: datapulse_user
+      POSTGRES_PASSWORD: datapulse_password
+      POSTGRES_DB: datapulse_warehouse
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_dw_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U datapulse_user -d datapulse_warehouse"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - datapulse_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: datapulse_redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - datapulse_network
+
+  fastapi_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datapulse_fastapi_api
+    restart: always
+    environment:
+      ENVIRONMENT: production
+      POSTGRES_HOST: postgres_warehouse
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: datapulse_user
+      POSTGRES_PASSWORD: datapulse_password
+      POSTGRES_DB: datapulse_warehouse
+      ASYNC_DATABASE_URL: postgresql+asyncpg://datapulse_user:datapulse_password@postgres_warehouse:5432/datapulse_warehouse
+      SYNC_DATABASE_URL: postgresql+psycopg2://datapulse_user:datapulse_password@postgres_warehouse:5432/datapulse_warehouse
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      postgres_warehouse:
+        condition: service_healthy
+    networks:
+      - datapulse_network
+
+  airflow_webserver:
+    image: apache/airflow:2.8.0-python3.11
+    container_name: datapulse_airflow_webserver
+    restart: always
+    command: webserver
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://datapulse_user:datapulse_password@postgres_warehouse:5432/datapulse_warehouse
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+    depends_on:
+      postgres_warehouse:
+        condition: service_healthy
+    networks:
+      - datapulse_network
+
+  airflow_scheduler:
+    image: apache/airflow:2.8.0-python3.11
+    container_name: datapulse_airflow_scheduler
+    restart: always
+    command: scheduler
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://datapulse_user:datapulse_password@postgres_warehouse:5432/datapulse_warehouse
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+    depends_on:
+      postgres_warehouse:
+        condition: service_healthy
+    networks:
+      - datapulse_network
+
+volumes:
+  postgres_dw_data:
+
+networks:
+  datapulse_network:
+    driver: bridge

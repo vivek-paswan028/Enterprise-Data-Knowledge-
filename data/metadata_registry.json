@@ -1,0 +1,14 @@
+{
+  "test_orders": {
+    "dataset_name": "test_orders",
+    "signature_hash": "1344c2ce40d30858037029ac4128701ebaa63e2678e9692a7142d164dcd12114",
+    "column_count": 4,
+    "columns": {
+      "order_id": "Int64",
+      "customer_id": "String",
+      "amount": "Float64",
+      "status": "String"
+    },
+    "created_at": "2026-08-07T09:34:12.933804"
+  }
+}
