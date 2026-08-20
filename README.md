@@ -106,6 +106,8 @@ Modern enterprises struggle with fragmented data, inconsistent metrics, and poor
 
 ## 📊 Power BI Analytics & Executive Dashboard
 
+![Power BI Executive Dashboard 2026 Preview](docs/images/powerbi_dashboard_preview.png)
+
 This platform includes a complete **Power BI Analytics Suite** equipped with an interactive web dashboard, dummy dataset generator, REST API connectors, and DAX business measures.
 
 ### 1. Interactive Power BI Web Dashboard
@@ -165,6 +167,8 @@ For detailed guidance on connecting **Power BI Desktop & Power BI Service** to t
 │   └── index.html
 ├── data/                   # Data directories (raw, processed, quarantine)
 ├── docs/                   # System documentation & Power BI integration guides
+│   ├── images/
+│   │   └── powerbi_dashboard_preview.png
 │   └── powerbi_integration_guide.md
 ├── scripts/                # Utility scripts & dummy data generator
 │   └── generate_dummy_data.py
