@@ -7,7 +7,6 @@
 ![SQL](https://img.shields.io/badge/SQL-Analytical-orange.svg)
 ![Power BI](https://img.shields.io/badge/Power_BI-Visualizations-F2C811.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)
-![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED.svg)
 
 ---
 
@@ -50,7 +49,7 @@ Modern enterprises struggle with fragmented data, inconsistent metrics, and poor
 - **Data Warehouse & Database**: PostgreSQL 16, SQL (Analytical & Dimensional Modeling), SQLAlchemy, Alembic
 - **Analytics & Visualization**: Power BI (Import & DirectQuery, DAX Modeling, Star Schema), Chart.js
 - **API & Pipeline Services**: FastAPI, Pydantic v2, Apache Airflow / Orchestration
-- **Infrastructure & Containerization**: Docker, Docker Compose, PyTest
+- **Testing & Quality Assurance**: PyTest
 
 ---
 
@@ -161,7 +160,6 @@ For detailed guidance on connecting **Power BI Desktop & Power BI Service** to t
 
 ```
 .
-├── .github/workflows/      # Automated CI/CD workflows
 ├── dags/                   # Apache Airflow DAGs for pipeline orchestration
 ├── dashboard/              # Interactive Power BI Executive Dashboard Web App
 │   └── index.html
@@ -182,8 +180,6 @@ For detailed guidance on connecting **Power BI Desktop & Power BI Service** to t
 │   ├── validation/         # Quality validation & quarantine engine
 │   └── warehouse/          # PostgreSQL database models, loaders & connection pools
 ├── tests/                  # Comprehensive unit & integration PyTest suite
-├── Dockerfile              # Containerization image build configuration
-├── docker-compose.yml      # Multi-container service definitions (App, PostgreSQL)
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
 ```
@@ -195,8 +191,7 @@ For detailed guidance on connecting **Power BI Desktop & Power BI Service** to t
 ### Prerequisites
 
 - **Python**: 3.11 or higher
-- **PostgreSQL**: 16+ (or run via Docker Compose)
-- **Docker & Docker Compose**: Recommended for local deployment
+- **PostgreSQL**: 16+
 - **Power BI Desktop**: Optional, for viewing and editing `.pbix` reports
 
 ---
@@ -228,12 +223,7 @@ For detailed guidance on connecting **Power BI Desktop & Power BI Service** to t
    # Edit .env with your PostgreSQL credentials and database configurations
    ```
 
-5. **Launch Infrastructure via Docker Compose**
-   ```bash
-   docker-compose up -d --build
-   ```
-
-6. **Run FastAPI Server & Power BI Dashboard**
+5. **Run FastAPI Server & Power BI Dashboard**
    ```bash
    uvicorn src.api.main:app --reload --port 8000
    ```
